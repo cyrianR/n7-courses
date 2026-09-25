@@ -1,0 +1,97 @@
+Auteur 1 (exercice 1 & 3) : RAGOT Cyrian
+Auteur 2 (exercice 2) : SAHIR Aya
+
+Vous devez répondre de manière courte aux questions suivantes.
+Il n'est pas demandé de modifier le programme que vous avez écrit mais
+simplement d'expliquer les modifications qu'il faudrait y apporter.
+
+Il faut remplacer les « ... » par votre réponse en laissant les lignes
+blanches avant et après.
+
+--------------------------------------------------------------------------------
+C1. Que se passe-t-il si dans Jeu_Devin_Exo2 l'utilisateur répond d'abord trop
+grand puis toujours trop petit ?
+--------------------------------------------------------------------------------
+
+Réponse :- Pour la réponse trop petit il continue à proposer l'entier juste avant celui qui a proposé avant de répondre par trop grand.
+
+
+--------------------------------------------------------------------------------
+C2. Est-on sûr que Jeu_Devin_Exo1 se termine ? Quel argument peut-on donner ?
+--------------------------------------------------------------------------------
+
+Réponse : Si l'utilisateur tente de gagner le programme se terminera puisque qu'il aura au moins essayé tous les nombres possibles entre 1 et 999.
+
+
+--------------------------------------------------------------------------------
+C3. Est-on sûr que Jeu_Devin_Exo2 se termine ? Quel argument peut-on donner ?
+--------------------------------------------------------------------------------
+
+Réponse : La recherche par dichotomie va forcément se terminer vu que l'on divise l'intervalle de recherche à chaque fois par deux, le programme va forcément finir par tomber sur l'entier en question ou remarquer une triche
+
+
+--------------------------------------------------------------------------------
+F1. Les noms Jeu_Devin_Exo1, Jeu_Devin_Exo2 et Jeu_Devin_Exo3 ne sont pas très
+parlants. Par quoi pourrait-on les remplacer ?
+--------------------------------------------------------------------------------
+
+Réponse : On peut remplacer Jeu_Devin_Exo1 par Jeu_Utilisateur_Devin, Jeu_Devin_Exo2 par Jeu_Ordinateur_Devin et Jeu_Devin_Exo3 par Jeu_Devin_Complet
+
+
+--------------------------------------------------------------------------------
+E1. Quelles sont les modifications à apporter à votre programme pour chercher
+des nombres compris entre 1 et 9999 ?
+-------------------------------------------------------------------------------
+
+Réponse : Il faut initialiser la dichotomie à 1 et 9999 (variables min et max)
+
+
+--------------------------------------------------------------------------------
+E2. Quelles sont les modifications à apporter pour que que l'utilisateur
+puisse utiliser aussi les caractères <, > et = pour indiquer si le nombre
+proposé est trop petit, trop grand ou le bon ?
+--------------------------------------------------------------------------------
+
+Réponse : il faut rajouter dans la partie Traiter le retour de l'utilisateur des :
+ or Retour = '<'
+ or Retour = '>'
+ or Retour = '='
+
+
+--------------------------------------------------------------------------------
+E3. On veut limiter le nombre de tentatives à 10. Si le nombre n'a pas été
+trouvé avant, le joueur a perdu. Comment prendre en compte cette évolution ?
+--------------------------------------------------------------------------------
+
+Réponse : On peut rajouter une condition de sortie de répéter:
+exit when( Nombre_Est_Bon or Essais = 10)
+
+
+--------------------------------------------------------------------------------
+E4. La recherche dichotomique conduit à toujours proposer les mêmes nombres.
+Comment faire pour donner l'impression que le programme joue comme un humain
+tout en restant efficace ?
+--------------------------------------------------------------------------------
+
+Réponse : On pourrait proposer aléatoirement un nombre autour de la moyenne calculée lors de la dichotomie.
+
+
+--------------------------------------------------------------------------------
+E5. Actuellement, l'utilisateur doit attendre la fin d'un jeu pour quitter le
+programme. On veut qu'il puisse le faire dès qu'il saisit 0 quand on lui pose
+une question. Le programme doit alors dire que l'utilisateur a abandonné la
+partie. Comment faire ?
+--------------------------------------------------------------------------------
+
+Réponse : il faut ajouter une condition de sortie de boucle répéter pour les deux jeux ou on vérifie que la variable qui enregistre l'entrée
+de l'utilisateur soit égale à "0".
+
+--------------------------------------------------------------------------------
+E6. Quand le programme détecte que l'utilisateur a triché, comment faire pour
+que le programme explique au joueur quand il a triché ?
+--------------------------------------------------------------------------------
+
+Réponse : On peut enregistrer toutes les indications données par l'utilisateur (plus haut ou plus bas) et à la fin du programme, lorsqu'il y a triche, demander à l'utilisateur quel nombre il avait en tête puis vérifier quelle est l'indication fausse.
+
+--------------------------------------------------------------------------------
+

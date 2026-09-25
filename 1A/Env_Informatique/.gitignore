@@ -1,0 +1,25 @@
+.templogin
+.tempres
+.tempsh
+Progs_C/Executables/*
+
+# Generated files
+*.log
+*.tmp
+*.swp
+*.swo
+*.bak
+*.orig
+
+# Build output
+build/
+bin/
+obj/
+out/
+*.o
+*.obj
+*.a
+*.so
+*.dll
+*.dylib
+*.exe

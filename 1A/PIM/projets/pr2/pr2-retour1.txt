@@ -1,0 +1,11 @@
+
+* Voir le retour général
+* Voir le retour automatique
+
+* Attention, mauvaise indentation sans votre réglage de tab (2).
+  Il faudrait éviter de mélanger espaces et tabulations.
+
+* Taille :
+    - Vraiment pas beau : un sous-programme ne devrait utiliser que ses
+      paramètres.
+    - Idem pour Cle_Presente, etc.

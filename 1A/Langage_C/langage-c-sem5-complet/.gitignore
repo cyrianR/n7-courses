@@ -1,0 +1,54 @@
+mandelbrot
+test_complexe
+
+# ===== Build output =====
+build/
+bin/
+obj/
+out/
+*.o
+*.obj
+*.a
+*.so
+*.dll
+*.dylib
+*.exe
+
+# ===== Debug / profiling =====
+*.dSYM/
+*.su
+*.gcda
+*.gcno
+*.gcov
+*.prof
+*.profraw
+
+# ===== Generated files =====
+*.log
+*.tmp
+*.swp
+*.swo
+*.bak
+*.orig
+
+# ===== CMake =====
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+compile_commands.json
+CTestTestfile.cmake
+_testing/
+install_manifest.txt
+
+# ===== Autotools =====
+.deps/
+.libs/
+autom4te.cache/
+config.status
+config.log
+config.cache
+configure~
+aclocal.m4
+Makefile.in
+stamp-h1

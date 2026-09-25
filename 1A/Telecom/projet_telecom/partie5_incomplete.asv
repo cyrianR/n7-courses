@@ -1,0 +1,56 @@
+    %
+% Projet Telecom Partie 5 : Comparaison du modulateur DVS-S avec un des 
+% modulateurs proposés par le DVB-S2
+% Format DVB-S
+% Mapping 8-PSK , filtre mise en forme cos surélevé (roll off 0.35)
+%
+
+clear all;
+close all;
+
+
+
+
+%% CONSTANTES
+M = 4; % ordre de modulation (QPSK)
+n = 2; % bits par symboles
+alpha = 0.2; % roll-off
+span = 8; % span du rcosdesign
+Fe = 6000; % fréquence échantillonnage (Hz)
+Te = 1/Fe; % pèriode échantiollnnage (s)
+Rb = 3000; % débit binaire (bps)
+Tb = 1/Rb; % pèriode binaire (bits)
+Ts = n*Tb; % pèriode symbole
+Ns = floor(Ts/Te);  % facteur de suréchantillonnage
+Fp = 2000; % fréquence porteuse (Hz)
+N = 3000; % nombre d'échantillons
+bits = randi([0,1],1,N); % information binaire à transmettre
+EbsurN0 = 10^100; % rapport signal à bruit par bit
+
+retard = span*Ns; % retard introduit avant filtres mise en forme et reception
+
+symboles=mapping_8_psk(bits);
+%mapping=[0 0 0; 1 0 0; 1 1 0 ; 0 1 0; 0 1 1; 1 1 1; 1 0 1; 0 0 1];
+% symboles = randi([0, 7], 1, nb_symboles);
+symboles_8psk = exp(1i * (2*pi/8) * symboles);
+
+ % filtrage
+h = rcosdesign(alpha,2*span,Ns); % filtre de mise en forme
+%signal = filter(h,1,symboles_8psk);
+signal = upfirdn(symboles_8psk, h, Fe);
+signal = signal(retard+1:end);
+
+% Reception
+%signal_r = filter(h,1,[signal zeros(1,retard)]);
+signal_dvbs2 = upfirdn(symboles_8psk, h, Fe);
+signal_r= signal_r(retard +1:end);
+
+% echantillonneur
+[ech,bits_sortie]=ech_8_psk(signal_r,Ns);
+
+TEB = sum(bits ~= bits_sortie)/length(bits);
+
+% Tracé des constellations en sortie du mapping et en sortie de
+% l'échantillonneur pour valeur donnée de Eb/N0.
+scatterplot(symboles_8psk);
+title("Tracé des constellations en sortie du mapping");
