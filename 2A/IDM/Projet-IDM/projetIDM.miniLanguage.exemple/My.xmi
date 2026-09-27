@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<miniLanguage:MiniLanguage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:miniLanguage="http://www.example.org/miniLanguage">
+  <miniLanguageElement xsi:type="miniLanguage:OperationBinaire">
+    <output input="//@miniLanguageElement.1/@input" name="Somme"/>
+    <input output="//@miniLanguageElement.3/@output" name="2"/>
+    <input output="//@miniLanguageElement.2/@output" name="param_somme"/>
+  </miniLanguageElement>
+  <miniLanguageElement xsi:type="miniLanguage:OperationUnaire" operation="EXPONENTIAL">
+    <output input="//@miniLanguageElement.10/@input.1" name="expo_o"/>
+    <input output="//@miniLanguageElement.0/@output" name="expo_i"/>
+  </miniLanguageElement>
+  <miniLanguageElement xsi:type="miniLanguage:Parameter" name="param">
+    <output input="//@miniLanguageElement.0/@input.1" type="INTCOL" name="param"/>
+  </miniLanguageElement>
+  <miniLanguageElement xsi:type="miniLanguage:IntegerConstant" value="2">
+    <output input="//@miniLanguageElement.0/@input.0" name="2"/>
+  </miniLanguageElement>
+  <miniLanguageElement xsi:type="miniLanguage:FloatConstant" value="6.21">
+    <output input="//@miniLanguageElement.5/@input"/>
+  </miniLanguageElement>
+  <miniLanguageElement xsi:type="miniLanguage:OperationUnaire" operation="OPPOSITE">
+    <output input="//@miniLanguageElement.6/@input.1"/>
+    <input output="//@miniLanguageElement.4/@output"/>
+  </miniLanguageElement>
+  <miniLanguageElement xsi:type="miniLanguage:OperationBinaire" operation="MAXIMUM">
+    <output input="//@miniLanguageElement.8/@input.1"/>
+    <input output="//@miniLanguageElement.7/@output"/>
+    <input output="//@miniLanguageElement.5/@output"/>
+  </miniLanguageElement>
+  <miniLanguageElement xsi:type="miniLanguage:Parameter" name="Parameter">
+    <output input="//@miniLanguageElement.6/@input.0 //@miniLanguageElement.8/@input.0"/>
+  </miniLanguageElement>
+  <miniLanguageElement xsi:type="miniLanguage:OperationBinaire" operation="PRODUCT">
+    <output input="//@miniLanguageElement.10/@input.0"/>
+    <input output="//@miniLanguageElement.7/@output"/>
+    <input output="//@miniLanguageElement.6/@output"/>
+  </miniLanguageElement>
+  <miniLanguageElement xsi:type="miniLanguage:Return" name="Return">
+    <input output="//@miniLanguageElement.10/@output"/>
+  </miniLanguageElement>
+  <miniLanguageElement xsi:type="miniLanguage:OperationBinaire" operation="MINIMUM">
+    <output input="//@miniLanguageElement.9/@input"/>
+    <input output="//@miniLanguageElement.8/@output"/>
+    <input output="//@miniLanguageElement.1/@output"/>
+  </miniLanguageElement>
+</miniLanguage:MiniLanguage>

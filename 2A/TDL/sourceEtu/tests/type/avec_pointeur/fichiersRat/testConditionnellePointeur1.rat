@@ -1,0 +1,8 @@
+test{
+  bool* x = (new bool);
+  if (x) {
+    int y = 3;
+  } else {
+    int y = 5;
+  }
+}

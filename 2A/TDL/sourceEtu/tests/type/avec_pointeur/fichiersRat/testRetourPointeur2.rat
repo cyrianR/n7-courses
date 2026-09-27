@@ -1,0 +1,9 @@
+int foo (int x){
+  return &x;
+}
+
+
+test{
+  int y = 1;
+  int* x = foo(y);
+}

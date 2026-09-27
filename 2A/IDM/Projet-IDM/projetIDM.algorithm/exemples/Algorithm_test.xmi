@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<algorithm:Algorithm
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:algorithm="http://algorithm"
+    name="AlgoTest">
+  <input/>
+  <output xsi:type="algorithm:OutputSimple"
+      type="BOOL"/>
+  <ressource
+      href="Ressource_test.xmi#/"/>
+  <documentation
+      text="Ceci est une doc"/>
+</algorithm:Algorithm>

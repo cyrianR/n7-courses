@@ -1,0 +1,6 @@
+test{
+  int* z = (new int);
+  int y = 5;
+  z = &y;
+  int q = (*(*z));
+}

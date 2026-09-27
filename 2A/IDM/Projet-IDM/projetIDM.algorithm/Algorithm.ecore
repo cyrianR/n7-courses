@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="algorithm" nsURI="http://algorithm" nsPrefix="algorithm">
+  <eClassifiers xsi:type="ecore:EClass" name="Algorithm">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="input" lowerBound="1" upperBound="-1"
+        eType="#//Input" containment="true" eOpposite="#//Input/algorithm"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="output" lowerBound="1"
+        eType="#//Output" containment="true" eOpposite="#//Output/algorithm"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="ressource" lowerBound="1"
+        eType="#//Ressource" eOpposite="#//Ressource/algorithm"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="documentation" eType="#//Documentation"
+        containment="true" eOpposite="#//Documentation/algorithm"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Input">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" lowerBound="1" eType="ecore:EEnum ../projetIDM.table/Table.ecore#//Type"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="algorithm" lowerBound="1"
+        eType="#//Algorithm" eOpposite="#//Algorithm/input"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="column" lowerBound="1"
+        eType="ecore:EClass ../projetIDM.table/Table.ecore#//Column"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="OutputColumn" eSuperTypes="#//Output">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" lowerBound="1" eType="ecore:EEnum ../projetIDM.table/Table.ecore#//Type"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="column" lowerBound="1"
+        eType="ecore:EClass ../projetIDM.table/Table.ecore#//Column"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Documentation">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="algorithm" lowerBound="1"
+        eType="#//Algorithm" eOpposite="#//Algorithm/documentation"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="text" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="RessourceFamilyElement">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="ressources" upperBound="-1"
+        eType="#//Ressource" eOpposite="#//Ressource/ressourcefamilyelements"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="catalogue" lowerBound="1"
+        eType="#//Catalogue" eOpposite="#//Catalogue/ressourcefamilyelements"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Catalogue">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="ressourcefamilyelements"
+        upperBound="-1" eType="#//RessourceFamilyElement" containment="true" eOpposite="#//RessourceFamilyElement/catalogue"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Ressource">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="ressourcefamilyelements"
+        upperBound="-1" eType="#//RessourceFamilyElement" eOpposite="#//RessourceFamilyElement/ressources"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="algorithm" lowerBound="1"
+        upperBound="-1" eType="#//Algorithm" eOpposite="#//Algorithm/ressource"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="path" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Output" abstract="true">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="algorithm" eType="#//Algorithm"
+        eOpposite="#//Algorithm/output"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="OutputSimple" eSuperTypes="#//Output">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" lowerBound="1" eType="ecore:EEnum ../projetIDM.table/Table.ecore#//Type"/>
+  </eClassifiers>
+</ecore:EPackage>

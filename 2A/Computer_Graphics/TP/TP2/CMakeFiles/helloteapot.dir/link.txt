@@ -1,0 +1,1 @@
+/usr/bin/c++ -Wl,--dependency-file=CMakeFiles/helloteapot.dir/link.d CMakeFiles/helloteapot.dir/helloteapot.cpp.o -o helloteapot  /usr/lib/libGL.so /usr/lib/libGLU.so /usr/lib/libglut.so /usr/lib/libXmu.so /usr/lib/libXi.so /usr/lib/libGL.so

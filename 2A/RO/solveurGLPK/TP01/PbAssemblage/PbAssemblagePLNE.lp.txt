@@ -1,0 +1,25 @@
+\* Problème : Assemblage de vélos *\
+
+\* nbvc : nombre de vélos cargos assemblés par semaine
+\* nbvs : nombre de vélos standards assemblés par semaine
+
+\* Objectif : maximiser le bénéfice sur une semaine
+Maximize
+Benefice: 700 nbvc + 300 nbvs 
+
+\* Contraintes :
+\* - chaque semaine l'équipe fournit au maximum 60 heures de travail
+\* - les vélos sont garés sur un parking de 1500m2, vidé tous les week-ends
+\* - on ne peut pas assembler plus de 700 vélos cargos par semaine
+\* - les nombres de vélos sont positifs
+Subject To
+MaxHeureTravail   : 6 nbvc + 5 nbvs <= 6000
+MaxSurfaceParking : 2.5 nbvc + 1 nbvs <= 1500
+MaxVeloCargo      : nbvc <= 700
+NbVCPositif        : nbvc >= 0
+NbVSPositif        : nbvs >= 0
+
+\* Déclarer les variables entières 
+Integer 
+nbvc 
+nbvs

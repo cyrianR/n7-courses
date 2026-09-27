@@ -1,0 +1,4 @@
+test{
+  int z = 3;
+  int y = (*z);
+}

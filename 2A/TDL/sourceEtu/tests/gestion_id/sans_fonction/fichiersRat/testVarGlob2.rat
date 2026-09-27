@@ -1,0 +1,7 @@
+static int variable = 5;
+static int variable = 4;
+static int variable = 1;
+
+test {
+  print variable;
+}

@@ -1,0 +1,5 @@
+main {
+    bool* x = (new bool);
+    rat* y = (new rat);
+    int* z = (new int);
+}

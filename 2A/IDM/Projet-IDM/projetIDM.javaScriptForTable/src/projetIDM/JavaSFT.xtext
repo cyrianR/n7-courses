@@ -1,0 +1,107 @@
+grammar projetIDM.JavaSFT with org.eclipse.xtext.common.Terminals
+
+generate javaSFT "http://www.JavaSFT.projetIDM"
+
+JavaSFT:
+	Import 
+	Class
+;
+
+terminal SIZEVAR: "size";
+terminal SPACE: ' ';
+terminal TYPE_INTEGER: "Integer";
+terminal TYPE_FLOAT: "Float";
+terminal TYPE_STRING: "String";
+
+Value: Float | INT | STRING;
+Float: INT "." INT;
+
+Type: TypeNumber | TYPE_STRING ;
+TypeNumber: TYPE_INTEGER | TYPE_FLOAT;
+TypeList: "ArrayList<" type=Type ">";
+TypeListNumber: "ArrayList<" type=TypeNumber ">";
+	
+Import: "import" "java.util.ArrayList;"
+		"import" "java.util.List;"
+		"import" "java.util.Collections;"
+		"import" "java.util.stream.Collectors;"
+		"import" "java.util.stream.IntStream;";
+		
+ClassName hidden(WS): name=ID "JavaSFT";
+
+Class: "public" "class" className=ClassName "{"
+		methode=Methode
+	 "}"
+;
+
+Methode:
+	"public" "static" "List<" type=Type ">" "getResult(" ( SPACE | parameter=Parameter parameters+=(Parameter)* ) ")" "{"
+		"int" SIZEVAR "=" listName=ID ".size();"
+		constants+=(Constant)*
+		operations+=(Operation)*
+		return=Return
+	"}"
+;
+
+Parameter: "," "List<" type=Type ">" varName=ID;
+Return: "return" varName=ID;
+
+Constant: constDeclaration=ConstantDeclaration "=" constAssignment=ConstantAssignment ";";
+ConstantDeclaration: "final" type=Type varName=ID;
+ConstantAssignment hidden(WS): Type ".valueOf(" value=Value ")";
+
+Operation: OperationUnaire | OperationBinaire;
+OperationUnaire: SumUnaire | ProductUnaire | MinUnaire | MaxUnaire | OppositeUnaire | CosUnaire | SinUnaire | SqrtUnaire | ExpUnaire;
+OperationBinaire: SumBinaire | ProductBinaire | DivisionBinaire | MinBinaire | MaxBinaire;
+
+SumUnaire: type=Type varNameLeft=ID "=" listNameRight=ID ".stream().reduce((s,e)->s+e).get();" ;
+ProductUnaire: type=TypeNumber varNameLeft=ID "=" listNameRight=ID ".stream().reduce((s,e)->s*e).get();";
+MinUnaire:  type=TypeNumber varNameLeft=ID "=" "Collections.min(" listNameRight=ID ")";
+MaxUnaire: type=TypeNumber varNameLeft=ID "=" "Collections.max(" listNameRight=ID ")";
+OppositeUnaire: OppositeUnaireList | OppositeUnaireNumber;
+OppositeUnaireList: typeListLeft=TypeListNumber listNameLeft=ID "=" "(" typeListRight=TypeListNumber ")" listNameRight=ID ".stream().map(e->-e).collect(Collectors.toList());";
+OppositeUnaireNumber: type=TypeNumber varNameLeft=ID "=" "-" varNameRight=ID;
+CosUnaire: CosUnaireList | CosUnaireNumber;
+CosUnaireList: typeListLeft=TypeListNumber listNameLeft=ID "=" "(" typeListRight=TypeListNumber ")" listNameRight=ID ".stream().map(e->(float)Math.cos(e)).collect(Collectors.toList());";
+CosUnaireNumber: type=TypeNumber varNameLeft=ID "=" "(float)Math.cos(" varNameRight=ID ")";
+SinUnaire: SinUnaireList | SinUnaireNumber;
+SinUnaireList: typeListLeft=TypeListNumber listNameLeft=ID "=" "(" typeListRight=TypeListNumber ")" listNameRight=ID ".stream().map(e->(float)Math.sin(e)).collect(Collectors.toList());";
+SinUnaireNumber: type=TypeNumber varNameLeft=ID "=" "(float)Math.sin(" varNameRight=ID ")";
+SqrtUnaire: SqrtUnaireList | SqrtUnaireNumber;
+SqrtUnaireList: typeListLeft=TypeListNumber listNameLeft=ID "=" "(" typeListRight=TypeListNumber ")" listNameRight=ID ".stream().map(e->(float)Math.sqrt(e)).collect(Collectors.toList());";
+SqrtUnaireNumber: type=TypeNumber varNameLeft=ID "=" "(float)Math.sqrt(" varNameRight=ID ")";
+ExpUnaire: ExpUnaireList | ExpUnaireNumber;
+ExpUnaireList: typeListLeft=TypeListNumber listNameLeft=ID "=" "(" typeListRight=TypeListNumber ")" listNameRight=ID ".stream().map(e->(float)Math.exp(e)).collect(Collectors.toList());";
+ExpUnaireNumber: type=TypeNumber varNameLeft=ID "=" "(float)Math.exp(" varNameRight=ID ")";
+
+SumBinaire: SumBinaireListVal | SumBinaireListList | SumBinaireValVal;
+SumBinaireListVal: typeListLeft=TypeList listNameLeft=ID "=" typeListRight=TypeList listNameRight=ID ".stream().map(e->e+" valNameRight=ID ").collect(Collectors.toList());";
+SumBinaireListList: typeListLeft=TypeList listNameLeft=ID "=" "(" typeListRight=TypeList ")" "IntStream.range(0," SIZEVAR ").mapToObj(i->" listNameRight=ID ".get(i)+" listNameRight2=ID ".get(i)).collect(Collectors.toList());";
+SumBinaireValVal: typeVarLeft=Type varNameLeft=ID "=" varNameRight1=ID "+" varNameRight2=ID;
+
+ProductBinaire: ProductBinaireListVal | ProductBinaireListList | ProductBinaireValVal;
+ProductBinaireListVal: typeListLeft=TypeListNumber listNameLeft=ID "=" typeListRight=TypeListNumber listNameRight=ID ".stream().map(e->e*" valNameRight=ID ").collect(Collectors.toList());";
+ProductBinaireListList: typeListLeft=TypeListNumber listNameLeft=ID "=" "(" typeListRight=TypeListNumber ")" "IntStream.range(0," SIZEVAR ").mapToObj(i->" listNameRight=ID ".get(i)*" listNameRight2=ID ".get(i)).collect(Collectors.toList());";
+ProductBinaireValVal: typeVarLeft=TypeNumber varNameLeft=ID "=" varNameRight1=ID "*" varNameRight2=ID;
+
+DivisionBinaire: DivisionBinaireListVal | DivisionBinaireValList | DivisionBinaireListList | DivisionBinaireValVal;
+DivisionBinaireListVal: typeListLeft=TypeListNumber listNameLeft=ID "=" typeListRight=TypeListNumber listNameRight=ID ".stream().map(e->e/" valNameRight=ID ").collect(Collectors.toList());";
+DivisionBinaireValList: typeListLeft=TypeListNumber listNameLeft=ID "=" typeListRight=TypeListNumber listNameRight=ID ".stream().map(e->" valNameRight=ID "/e).collect(Collectors.toList());";
+DivisionBinaireListList: typeListLeft=TypeListNumber listNameLeft=ID "=" "(" typeListRight=TypeListNumber ")" "IntStream.range(0," SIZEVAR ").mapToObj(i->" listNameRight=ID ".get(i)/" listNameRight2=ID ".get(i)).collect(Collectors.toList());";
+DivisionBinaireValVal: typeVarLeft=TypeNumber varNameLeft=ID "=" varNameRight1=ID "/" varNameRight2=ID;
+
+MinBinaire: MinBinaireListVal | MinBinaireListList | MinBinaireValVal;
+MinBinaireListVal: typeListLeft=TypeListNumber listNameLeft=ID "=" typeListRight=TypeListNumber listNameRight=ID ".stream().map(e->Math.min(e," valNameRight=ID ")).collect(Collectors.toList());";
+MinBinaireListList: typeListLeft=TypeListNumber listNameLeft=ID "=" "(" typeListRight=TypeListNumber ")" "IntStream.range(0," SIZEVAR ").mapToObj(i->Math.min(" listNameRight=ID ".get(i)," listNameRight2=ID ".get(i))).collect(Collectors.toList());";
+MinBinaireValVal: typeVarLeft=TypeNumber varNameLeft=ID "=" "Math.min(" varNameRight1=ID "," varNameRight2=ID ")";
+
+MaxBinaire: MaxBinaireListVal | MaxBinaireListList | MaxBinaireValVal;
+MaxBinaireListVal: typeListLeft=TypeListNumber listNameLeft=ID "=" typeListRight=TypeListNumber listNameRight=ID ".stream().map(e->Math.max(e," valNameRight=ID ")).collect(Collectors.toList());";
+MaxBinaireListList: typeListLeft=TypeListNumber listNameLeft=ID "=" "(" typeListRight=TypeListNumber ")" "IntStream.range(0," SIZEVAR ").mapToObj(i->Math.max(" listNameRight=ID ".get(i)," listNameRight2=ID ".get(i))).collect(Collectors.toList());";
+MaxBinaireValVal: typeVarLeft=TypeNumber varNameLeft=ID "=" "Math.max(" varNameRight1=ID "," varNameRight2=ID ")";
+
+
+
+
+
+

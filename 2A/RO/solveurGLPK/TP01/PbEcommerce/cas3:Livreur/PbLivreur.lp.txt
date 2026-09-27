@@ -1,0 +1,192 @@
+\* Problem: PbLivreur *\
+
+Minimize
+ DistanceTolal: + 20 X(ALPHA,ALPHA) + X(ALPHA,C1) + X(ALPHA,C2)
+ + 10 X(ALPHA,C3) + 12 X(ALPHA,C4) + 12 X(ALPHA,C5) + X(C1,ALPHA)
+ + 20 X(C1,C1) + X(C1,C2) + 8 X(C1,C3) + 10 X(C1,C4) + 11 X(C1,C5)
+ + X(C2,ALPHA) + X(C2,C1) + 20 X(C2,C2) + 8 X(C2,C3) + 11 X(C2,C4)
+ + 10 X(C2,C5) + 10 X(C3,ALPHA) + 8 X(C3,C1) + 8 X(C3,C2) + 20 X(C3,C3)
+ + X(C3,C4) + X(C3,C5) + 12 X(C4,ALPHA) + 10 X(C4,C1) + 11 X(C4,C2)
+ + X(C4,C3) + 20 X(C4,C4) + X(C4,C5) + 12 X(C5,ALPHA) + 11 X(C5,C1)
+ + 10 X(C5,C2) + X(C5,C3) + X(C5,C4) + 20 X(C5,C5)
+
+Subject To
+ RespectMaxTache(ALPHA): + X(ALPHA,ALPHA) + X(ALPHA,C1) + X(ALPHA,C2)
+ + X(ALPHA,C3) + X(ALPHA,C4) + X(ALPHA,C5) = 1
+ RespectMaxTache(C1): + X(C1,ALPHA) + X(C1,C1) + X(C1,C2) + X(C1,C3)
+ + X(C1,C4) + X(C1,C5) = 1
+ RespectMaxTache(C2): + X(C2,ALPHA) + X(C2,C1) + X(C2,C2) + X(C2,C3)
+ + X(C2,C4) + X(C2,C5) = 1
+ RespectMaxTache(C3): + X(C3,ALPHA) + X(C3,C1) + X(C3,C2) + X(C3,C3)
+ + X(C3,C4) + X(C3,C5) = 1
+ RespectMaxTache(C4): + X(C4,ALPHA) + X(C4,C1) + X(C4,C2) + X(C4,C3)
+ + X(C4,C4) + X(C4,C5) = 1
+ RespectMaxTache(C5): + X(C5,ALPHA) + X(C5,C1) + X(C5,C2) + X(C5,C3)
+ + X(C5,C4) + X(C5,C5) = 1
+ RespectMaxPersonne(ALPHA): + X(ALPHA,ALPHA) + X(C1,ALPHA) + X(C2,ALPHA)
+ + X(C3,ALPHA) + X(C4,ALPHA) + X(C5,ALPHA) = 1
+ RespectMaxPersonne(C1): + X(ALPHA,C1) + X(C1,C1) + X(C2,C1) + X(C3,C1)
+ + X(C4,C1) + X(C5,C1) = 1
+ RespectMaxPersonne(C2): + X(ALPHA,C2) + X(C1,C2) + X(C2,C2) + X(C3,C2)
+ + X(C4,C2) + X(C5,C2) = 1
+ RespectMaxPersonne(C3): + X(ALPHA,C3) + X(C1,C3) + X(C2,C3) + X(C3,C3)
+ + X(C4,C3) + X(C5,C3) = 1
+ RespectMaxPersonne(C4): + X(ALPHA,C4) + X(C1,C4) + X(C2,C4) + X(C3,C4)
+ + X(C4,C4) + X(C5,C4) = 1
+ RespectMaxPersonne(C5): + X(ALPHA,C5) + X(C1,C5) + X(C2,C5) + X(C3,C5)
+ + X(C4,C5) + X(C5,C5) = 1
+ RespectChemin(ALPHA,ALPHA): + 1001 X(ALPHA,ALPHA) + X(C1,ALPHA)
+ + X(C2,ALPHA) + X(C3,ALPHA) + X(C4,ALPHA) + X(C5,ALPHA) <= 1000
+ RespectChemin(ALPHA,C1): + X(ALPHA,ALPHA) + 1000 X(ALPHA,C1)
+ + X(C1,ALPHA) + X(C2,ALPHA) + X(C3,ALPHA) + X(C4,ALPHA) + X(C5,ALPHA)
+ <= 1000
+ RespectChemin(ALPHA,C2): + X(ALPHA,ALPHA) + 1000 X(ALPHA,C2)
+ + X(C1,ALPHA) + X(C2,ALPHA) + X(C3,ALPHA) + X(C4,ALPHA) + X(C5,ALPHA)
+ <= 1000
+ RespectChemin(ALPHA,C3): + X(ALPHA,ALPHA) + 1000 X(ALPHA,C3)
+ + X(C1,ALPHA) + X(C2,ALPHA) + X(C3,ALPHA) + X(C4,ALPHA) + X(C5,ALPHA)
+ <= 1000
+ RespectChemin(ALPHA,C4): + X(ALPHA,ALPHA) + 1000 X(ALPHA,C4)
+ + X(C1,ALPHA) + X(C2,ALPHA) + X(C3,ALPHA) + X(C4,ALPHA) + X(C5,ALPHA)
+ <= 1000
+ RespectChemin(ALPHA,C5): + X(ALPHA,ALPHA) + 1000 X(ALPHA,C5)
+ + X(C1,ALPHA) + X(C2,ALPHA) + X(C3,ALPHA) + X(C4,ALPHA) + X(C5,ALPHA)
+ <= 1000
+ RespectChemin(C1,ALPHA): + X(ALPHA,C1) + 1000 X(C1,ALPHA) + X(C1,C1)
+ + X(C2,C1) + X(C3,C1) + X(C4,C1) + X(C5,C1) <= 1000
+ RespectChemin(C1,C1): + X(ALPHA,C1) + 1001 X(C1,C1) + X(C2,C1)
+ + X(C3,C1) + X(C4,C1) + X(C5,C1) <= 1000
+ RespectChemin(C1,C2): + X(ALPHA,C1) + X(C1,C1) + 1000 X(C1,C2)
+ + X(C2,C1) + X(C3,C1) + X(C4,C1) + X(C5,C1) <= 1000
+ RespectChemin(C1,C3): + X(ALPHA,C1) + X(C1,C1) + 1000 X(C1,C3)
+ + X(C2,C1) + X(C3,C1) + X(C4,C1) + X(C5,C1) <= 1000
+ RespectChemin(C1,C4): + X(ALPHA,C1) + X(C1,C1) + 1000 X(C1,C4)
+ + X(C2,C1) + X(C3,C1) + X(C4,C1) + X(C5,C1) <= 1000
+ RespectChemin(C1,C5): + X(ALPHA,C1) + X(C1,C1) + 1000 X(C1,C5)
+ + X(C2,C1) + X(C3,C1) + X(C4,C1) + X(C5,C1) <= 1000
+ RespectChemin(C2,ALPHA): + X(ALPHA,C2) + X(C1,C2) + 1000 X(C2,ALPHA)
+ + X(C2,C2) + X(C3,C2) + X(C4,C2) + X(C5,C2) <= 1000
+ RespectChemin(C2,C1): + X(ALPHA,C2) + X(C1,C2) + 1000 X(C2,C1)
+ + X(C2,C2) + X(C3,C2) + X(C4,C2) + X(C5,C2) <= 1000
+ RespectChemin(C2,C2): + X(ALPHA,C2) + X(C1,C2) + 1001 X(C2,C2)
+ + X(C3,C2) + X(C4,C2) + X(C5,C2) <= 1000
+ RespectChemin(C2,C3): + X(ALPHA,C2) + X(C1,C2) + X(C2,C2)
+ + 1000 X(C2,C3) + X(C3,C2) + X(C4,C2) + X(C5,C2) <= 1000
+ RespectChemin(C2,C4): + X(ALPHA,C2) + X(C1,C2) + X(C2,C2)
+ + 1000 X(C2,C4) + X(C3,C2) + X(C4,C2) + X(C5,C2) <= 1000
+ RespectChemin(C2,C5): + X(ALPHA,C2) + X(C1,C2) + X(C2,C2)
+ + 1000 X(C2,C5) + X(C3,C2) + X(C4,C2) + X(C5,C2) <= 1000
+ RespectChemin(C3,ALPHA): + X(ALPHA,C3) + X(C1,C3) + X(C2,C3)
+ + 1000 X(C3,ALPHA) + X(C3,C3) + X(C4,C3) + X(C5,C3) <= 1000
+ RespectChemin(C3,C1): + X(ALPHA,C3) + X(C1,C3) + X(C2,C3)
+ + 1000 X(C3,C1) + X(C3,C3) + X(C4,C3) + X(C5,C3) <= 1000
+ RespectChemin(C3,C2): + X(ALPHA,C3) + X(C1,C3) + X(C2,C3)
+ + 1000 X(C3,C2) + X(C3,C3) + X(C4,C3) + X(C5,C3) <= 1000
+ RespectChemin(C3,C3): + X(ALPHA,C3) + X(C1,C3) + X(C2,C3)
+ + 1001 X(C3,C3) + X(C4,C3) + X(C5,C3) <= 1000
+ RespectChemin(C3,C4): + X(ALPHA,C3) + X(C1,C3) + X(C2,C3) + X(C3,C3)
+ + 1000 X(C3,C4) + X(C4,C3) + X(C5,C3) <= 1000
+ RespectChemin(C3,C5): + X(ALPHA,C3) + X(C1,C3) + X(C2,C3) + X(C3,C3)
+ + 1000 X(C3,C5) + X(C4,C3) + X(C5,C3) <= 1000
+ RespectChemin(C4,ALPHA): + X(ALPHA,C4) + X(C1,C4) + X(C2,C4) + X(C3,C4)
+ + 1000 X(C4,ALPHA) + X(C4,C4) + X(C5,C4) <= 1000
+ RespectChemin(C4,C1): + X(ALPHA,C4) + X(C1,C4) + X(C2,C4) + X(C3,C4)
+ + 1000 X(C4,C1) + X(C4,C4) + X(C5,C4) <= 1000
+ RespectChemin(C4,C2): + X(ALPHA,C4) + X(C1,C4) + X(C2,C4) + X(C3,C4)
+ + 1000 X(C4,C2) + X(C4,C4) + X(C5,C4) <= 1000
+ RespectChemin(C4,C3): + X(ALPHA,C4) + X(C1,C4) + X(C2,C4) + X(C3,C4)
+ + 1000 X(C4,C3) + X(C4,C4) + X(C5,C4) <= 1000
+ RespectChemin(C4,C4): + X(ALPHA,C4) + X(C1,C4) + X(C2,C4) + X(C3,C4)
+ + 1001 X(C4,C4) + X(C5,C4) <= 1000
+ RespectChemin(C4,C5): + X(ALPHA,C4) + X(C1,C4) + X(C2,C4) + X(C3,C4)
+ + X(C4,C4) + 1000 X(C4,C5) + X(C5,C4) <= 1000
+ RespectChemin(C5,ALPHA): + X(ALPHA,C5) + X(C1,C5) + X(C2,C5) + X(C3,C5)
+ + X(C4,C5) + 1000 X(C5,ALPHA) + X(C5,C5) <= 1000
+ RespectChemin(C5,C1): + X(ALPHA,C5) + X(C1,C5) + X(C2,C5) + X(C3,C5)
+ + X(C4,C5) + 1000 X(C5,C1) + X(C5,C5) <= 1000
+ RespectChemin(C5,C2): + X(ALPHA,C5) + X(C1,C5) + X(C2,C5) + X(C3,C5)
+ + X(C4,C5) + 1000 X(C5,C2) + X(C5,C5) <= 1000
+ RespectChemin(C5,C3): + X(ALPHA,C5) + X(C1,C5) + X(C2,C5) + X(C3,C5)
+ + X(C4,C5) + 1000 X(C5,C3) + X(C5,C5) <= 1000
+ RespectChemin(C5,C4): + X(ALPHA,C5) + X(C1,C5) + X(C2,C5) + X(C3,C5)
+ + X(C4,C5) + 1000 X(C5,C4) + X(C5,C5) <= 1000
+ RespectChemin(C5,C5): + X(ALPHA,C5) + X(C1,C5) + X(C2,C5) + X(C3,C5)
+ + X(C4,C5) + 1001 X(C5,C5) <= 1000
+
+Bounds
+ 0 <= X(ALPHA,ALPHA) <= 1
+ 0 <= X(ALPHA,C1) <= 1
+ 0 <= X(ALPHA,C2) <= 1
+ 0 <= X(ALPHA,C3) <= 1
+ 0 <= X(ALPHA,C4) <= 1
+ 0 <= X(ALPHA,C5) <= 1
+ 0 <= X(C1,ALPHA) <= 1
+ 0 <= X(C1,C1) <= 1
+ 0 <= X(C1,C2) <= 1
+ 0 <= X(C1,C3) <= 1
+ 0 <= X(C1,C4) <= 1
+ 0 <= X(C1,C5) <= 1
+ 0 <= X(C2,ALPHA) <= 1
+ 0 <= X(C2,C1) <= 1
+ 0 <= X(C2,C2) <= 1
+ 0 <= X(C2,C3) <= 1
+ 0 <= X(C2,C4) <= 1
+ 0 <= X(C2,C5) <= 1
+ 0 <= X(C3,ALPHA) <= 1
+ 0 <= X(C3,C1) <= 1
+ 0 <= X(C3,C2) <= 1
+ 0 <= X(C3,C3) <= 1
+ 0 <= X(C3,C4) <= 1
+ 0 <= X(C3,C5) <= 1
+ 0 <= X(C4,ALPHA) <= 1
+ 0 <= X(C4,C1) <= 1
+ 0 <= X(C4,C2) <= 1
+ 0 <= X(C4,C3) <= 1
+ 0 <= X(C4,C4) <= 1
+ 0 <= X(C4,C5) <= 1
+ 0 <= X(C5,ALPHA) <= 1
+ 0 <= X(C5,C1) <= 1
+ 0 <= X(C5,C2) <= 1
+ 0 <= X(C5,C3) <= 1
+ 0 <= X(C5,C4) <= 1
+ 0 <= X(C5,C5) <= 1
+
+Generals
+ X(ALPHA,ALPHA)
+ X(ALPHA,C1)
+ X(ALPHA,C2)
+ X(ALPHA,C3)
+ X(ALPHA,C4)
+ X(ALPHA,C5)
+ X(C1,ALPHA)
+ X(C1,C1)
+ X(C1,C2)
+ X(C1,C3)
+ X(C1,C4)
+ X(C1,C5)
+ X(C2,ALPHA)
+ X(C2,C1)
+ X(C2,C2)
+ X(C2,C3)
+ X(C2,C4)
+ X(C2,C5)
+ X(C3,ALPHA)
+ X(C3,C1)
+ X(C3,C2)
+ X(C3,C3)
+ X(C3,C4)
+ X(C3,C5)
+ X(C4,ALPHA)
+ X(C4,C1)
+ X(C4,C2)
+ X(C4,C3)
+ X(C4,C4)
+ X(C4,C5)
+ X(C5,ALPHA)
+ X(C5,C1)
+ X(C5,C2)
+ X(C5,C3)
+ X(C5,C4)
+ X(C5,C5)
+
+End

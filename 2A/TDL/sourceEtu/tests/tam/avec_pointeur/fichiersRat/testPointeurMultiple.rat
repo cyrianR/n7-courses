@@ -1,0 +1,8 @@
+prog {
+    int** x = (new int*);
+    int* y = (new int);
+    int z = 8;
+    y = &z;
+    (*x) = y;
+    print (*(*x));
+}

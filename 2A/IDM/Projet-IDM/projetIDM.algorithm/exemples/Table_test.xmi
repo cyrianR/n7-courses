@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table:Table xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:table="http://table" name="MaTable" fichierSource="monfichier">
+  <columnelement xsi:type="table:StandardColumn" name="C1"/>
+  <columnelement xsi:type="table:StandardColumn" name="C2"/>
+  <columnelement xsi:type="table:DerivedColumn" name="C3"/>
+  <columnid name="C0"/>
+</table:Table>

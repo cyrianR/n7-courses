@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="miniLanguage" nsURI="http://www.example.org/miniLanguage" nsPrefix="miniLanguage">
+  <eClassifiers xsi:type="ecore:EClass" name="MiniLanguage">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="miniLanguageElement" upperBound="-1"
+        eType="#//MiniLanguageElement" containment="true" eOpposite="#//MiniLanguageElement/minilanguage"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="MiniLanguageElement" abstract="true">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="minilanguage" lowerBound="1"
+        eType="#//MiniLanguage" eOpposite="#//MiniLanguage/miniLanguageElement"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Input">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="output" lowerBound="1"
+        eType="#//Output" eOpposite="#//Output/input"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" lowerBound="1" eType="#//Type"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="return" eType="#//Return"
+        eOpposite="#//Return/input"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="operationBinaire" eType="#//OperationBinaire"
+        eOpposite="#//OperationBinaire/input"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="operationUnaire" eType="#//OperationUnaire"
+        eOpposite="#//OperationUnaire/input"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Output">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="input" lowerBound="1" upperBound="-1"
+        eType="#//Input" eOpposite="#//Input/output"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" lowerBound="1" eType="#//Type"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="operationBinaire" eType="#//OperationBinaire"
+        eOpposite="#//OperationBinaire/output"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="operationUnaire" eType="#//OperationUnaire"
+        eOpposite="#//OperationUnaire/output"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="parameter" eType="#//Parameter"
+        eOpposite="#//Parameter/output"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="OperationUnaire" eSuperTypes="#//MiniLanguageElement">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="output" lowerBound="1"
+        eType="#//Output" containment="true" eOpposite="#//Output/operationUnaire"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="input" lowerBound="1" eType="#//Input"
+        containment="true" eOpposite="#//Input/operationUnaire"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="operation" eType="#//EnumOperationUnaire"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="OperationBinaire" eSuperTypes="#//MiniLanguageElement">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="output" lowerBound="1"
+        eType="#//Output" containment="true" eOpposite="#//Output/operationBinaire"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="input" lowerBound="2" upperBound="2"
+        eType="#//Input" containment="true" eOpposite="#//Input/operationBinaire"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="operation" eType="#//EnumOperationBinaire"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Constant" abstract="true" eSuperTypes="#//MiniLanguageElement">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="output" lowerBound="1"
+        eType="#//Output" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="IntegerConstant" eSuperTypes="#//Constant">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="FloatConstant" eSuperTypes="#//Constant">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EFloat"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="StringConstant" eSuperTypes="#//Constant">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="Type">
+    <eLiterals name="STR"/>
+    <eLiterals name="INT" value="1"/>
+    <eLiterals name="FLT" value="2"/>
+    <eLiterals name="STRCOL" value="3"/>
+    <eLiterals name="INTCOL" value="4"/>
+    <eLiterals name="FLTCOL" value="5"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="EnumOperationUnaire">
+    <eLiterals name="SUM" literal="SUM"/>
+    <eLiterals name="PRODUCT" value="1"/>
+    <eLiterals name="MINIMUM" value="2"/>
+    <eLiterals name="MAXIMUM" value="3"/>
+    <eLiterals name="OPPOSITE" value="4"/>
+    <eLiterals name="COSINUS" value="5"/>
+    <eLiterals name="SINUS" value="6"/>
+    <eLiterals name="SQRT" value="7"/>
+    <eLiterals name="EXPONENTIAL" value="8"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="EnumOperationBinaire">
+    <eLiterals name="SUM"/>
+    <eLiterals name="PRODUCT" value="1"/>
+    <eLiterals name="DIVISION" value="2"/>
+    <eLiterals name="MINIMUM" value="3"/>
+    <eLiterals name="MAXIMUM" value="4"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Parameter" eSuperTypes="#//MiniLanguageElement">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="output" lowerBound="1"
+        eType="#//Output" containment="true" eOpposite="#//Output/parameter"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Return" eSuperTypes="#//MiniLanguageElement">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="input" lowerBound="1" eType="#//Input"
+        containment="true" eOpposite="#//Input/return"/>
+  </eClassifiers>
+</ecore:EPackage>

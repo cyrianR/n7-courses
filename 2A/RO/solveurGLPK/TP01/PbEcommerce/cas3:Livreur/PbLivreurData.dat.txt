@@ -1,0 +1,20 @@
+data;
+
+
+set CLIENT :=
+ALPHA
+C1
+C2
+C3
+C4
+C5;
+
+param distances: ALPHA C1 C2 C3 C4 C5:=
+ALPHA 20 1 1 10 12 12
+C1 1 20 1 8 10 11
+C2 1 1 20 8 11 10
+C3 10 8 8 20 1 1
+C4 12 10 11 1 20 1
+C5 12 11 10 1 1 20;
+
+end;

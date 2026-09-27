@@ -1,0 +1,9 @@
+int add (int* x, int y){
+  return ((*x)+y);
+}
+
+test{
+  int* z = (new int);
+  (*z) = 1;
+  print add (z, 2);
+}

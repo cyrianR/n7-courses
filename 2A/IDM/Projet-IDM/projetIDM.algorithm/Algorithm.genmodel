@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/projetIDM.algorithm/src" modelPluginID="projetIDM.algorithm"
+    modelName="Algorithm" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="17.0" copyrightFields="false"
+    usedGenPackages="../projetIDM.table/Table.genmodel#//table" operationReflection="true"
+    importOrganizing="true">
+  <foreignModel>Algorithm.ecore</foreignModel>
+  <genPackages prefix="Algorithm" disposableProviderFactory="true" ecorePackage="Algorithm.ecore#/">
+    <genClasses ecoreClass="Algorithm.ecore#//Algorithm">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Algorithm.ecore#//Algorithm/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Algorithm.ecore#//Algorithm/input"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Algorithm.ecore#//Algorithm/output"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Algorithm.ecore#//Algorithm/ressource"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Algorithm.ecore#//Algorithm/documentation"/>
+    </genClasses>
+    <genClasses ecoreClass="Algorithm.ecore#//Input">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Algorithm.ecore#//Input/type"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference Algorithm.ecore#//Input/algorithm"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Algorithm.ecore#//Input/column"/>
+    </genClasses>
+    <genClasses ecoreClass="Algorithm.ecore#//OutputColumn">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Algorithm.ecore#//OutputColumn/type"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Algorithm.ecore#//OutputColumn/column"/>
+    </genClasses>
+    <genClasses ecoreClass="Algorithm.ecore#//Documentation">
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference Algorithm.ecore#//Documentation/algorithm"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Algorithm.ecore#//Documentation/text"/>
+    </genClasses>
+    <genClasses ecoreClass="Algorithm.ecore#//RessourceFamilyElement">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Algorithm.ecore#//RessourceFamilyElement/name"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Algorithm.ecore#//RessourceFamilyElement/ressources"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference Algorithm.ecore#//RessourceFamilyElement/catalogue"/>
+    </genClasses>
+    <genClasses ecoreClass="Algorithm.ecore#//Catalogue">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Algorithm.ecore#//Catalogue/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Algorithm.ecore#//Catalogue/ressourcefamilyelements"/>
+    </genClasses>
+    <genClasses ecoreClass="Algorithm.ecore#//Ressource">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Algorithm.ecore#//Ressource/ressourcefamilyelements"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Algorithm.ecore#//Ressource/algorithm"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Algorithm.ecore#//Ressource/path"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="Algorithm.ecore#//Output">
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference Algorithm.ecore#//Output/algorithm"/>
+    </genClasses>
+    <genClasses ecoreClass="Algorithm.ecore#//OutputSimple">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Algorithm.ecore#//OutputSimple/type"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

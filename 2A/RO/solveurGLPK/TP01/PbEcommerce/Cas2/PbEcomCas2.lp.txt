@@ -1,0 +1,50 @@
+\* Problem: PbEcomCas2 *\
+
+Minimize
+ cout: + 10 K(D1,M1,F1) + K(D1,M2,F1) + 5 K(D1,M3,F1) + 10 K(D1,M1,F2)
+ + K(D1,M2,F2) + 5 K(D1,M3,F2) + 2 K(D2,M1,F1) + 20 K(D2,M2,F1)
+ + 10 K(D2,M3,F1) + 2 K(D2,M1,F2) + 20 K(D2,M2,F2) + 10 K(D2,M3,F2)
+ + 110 TRAJETS(D1,M1) + 90 TRAJETS(D1,M2) + 100 TRAJETS(D1,M3)
+ + 110 TRAJETS(D2,M1) + 90 TRAJETS(D2,M2) + 100 TRAJETS(D2,M3)
+
+Subject To
+ RespectCommandes(D1,F1): + K(D1,M1,F1) + K(D1,M2,F1) + K(D1,M3,F1) = 2
+ RespectCommandes(D1,F2): + K(D1,M1,F2) + K(D1,M2,F2) + K(D1,M3,F2) = -0
+ RespectCommandes(D2,F1): + K(D2,M1,F1) + K(D2,M2,F1) + K(D2,M3,F1) = 1
+ RespectCommandes(D2,F2): + K(D2,M1,F2) + K(D2,M2,F2) + K(D2,M3,F2) = 3
+ RespectStocks(M1,F1): + K(D1,M1,F1) + K(D2,M1,F1) <= 2.5
+ RespectStocks(M1,F2): + K(D1,M1,F2) + K(D2,M1,F2) <= 1
+ RespectStocks(M2,F1): + K(D1,M2,F1) + K(D2,M2,F1) <= 1
+ RespectStocks(M2,F2): + K(D1,M2,F2) + K(D2,M2,F2) <= 2
+ RespectStocks(M3,F1): + K(D1,M3,F1) + K(D2,M3,F1) <= 2
+ RespectStocks(M3,F2): + K(D1,M3,F2) + K(D2,M3,F2) <= 1
+ RespectTrajets(D1,M1,F1): + K(D1,M1,F1) - 1000 TRAJETS(D1,M1) <= -0
+ RespectTrajets(D1,M1,F2): + K(D1,M1,F2) - 1000 TRAJETS(D1,M1) <= -0
+ RespectTrajets(D1,M2,F1): + K(D1,M2,F1) - 1000 TRAJETS(D1,M2) <= -0
+ RespectTrajets(D1,M2,F2): + K(D1,M2,F2) - 1000 TRAJETS(D1,M2) <= -0
+ RespectTrajets(D1,M3,F1): + K(D1,M3,F1) - 1000 TRAJETS(D1,M3) <= -0
+ RespectTrajets(D1,M3,F2): + K(D1,M3,F2) - 1000 TRAJETS(D1,M3) <= -0
+ RespectTrajets(D2,M1,F1): + K(D2,M1,F1) - 1000 TRAJETS(D2,M1) <= -0
+ RespectTrajets(D2,M1,F2): + K(D2,M1,F2) - 1000 TRAJETS(D2,M1) <= -0
+ RespectTrajets(D2,M2,F1): + K(D2,M2,F1) - 1000 TRAJETS(D2,M2) <= -0
+ RespectTrajets(D2,M2,F2): + K(D2,M2,F2) - 1000 TRAJETS(D2,M2) <= -0
+ RespectTrajets(D2,M3,F1): + K(D2,M3,F1) - 1000 TRAJETS(D2,M3) <= -0
+ RespectTrajets(D2,M3,F2): + K(D2,M3,F2) - 1000 TRAJETS(D2,M3) <= -0
+
+Bounds
+ 0 <= TRAJETS(D1,M1) <= 1
+ 0 <= TRAJETS(D1,M2) <= 1
+ 0 <= TRAJETS(D1,M3) <= 1
+ 0 <= TRAJETS(D2,M1) <= 1
+ 0 <= TRAJETS(D2,M2) <= 1
+ 0 <= TRAJETS(D2,M3) <= 1
+
+Generals
+ TRAJETS(D1,M1)
+ TRAJETS(D1,M2)
+ TRAJETS(D1,M3)
+ TRAJETS(D2,M1)
+ TRAJETS(D2,M2)
+ TRAJETS(D2,M3)
+
+End

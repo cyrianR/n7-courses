@@ -1,0 +1,6 @@
+prog {
+    int**** x = (new int***);
+    int z = 11;
+    (*(*(*(*x)))) = z;
+    print (*(*x));
+}

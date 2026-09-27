@@ -1,0 +1,20 @@
+data;
+
+
+set PERSONNE :=
+P1
+P2
+P3;
+
+set TACHE :=
+T1
+T2
+T3;
+
+
+param PREF: T1 T2 T3 :=
+P1 0 0 0 
+P2 0 0 0 
+P3 0 0 0;
+
+end;

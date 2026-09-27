@@ -1,0 +1,4 @@
+main {
+    rat* x = (new rat);
+    rat* y = null;
+}

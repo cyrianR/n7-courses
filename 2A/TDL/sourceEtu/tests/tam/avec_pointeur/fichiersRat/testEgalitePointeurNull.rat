@@ -1,0 +1,11 @@
+prog {
+  int x = 0;
+  int* y = &x;
+  y = null;
+  if (y = null) {
+    x = 1;
+  } else {
+    x = 0;
+  }
+  print (x);
+}

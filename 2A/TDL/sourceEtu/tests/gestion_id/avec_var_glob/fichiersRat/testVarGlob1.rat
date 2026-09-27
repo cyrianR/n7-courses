@@ -1,0 +1,5 @@
+static int variable = 0;
+
+test {
+  print variable;
+}

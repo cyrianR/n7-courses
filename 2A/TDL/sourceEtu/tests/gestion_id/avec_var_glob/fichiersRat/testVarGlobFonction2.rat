@@ -1,0 +1,12 @@
+static int variable = 0;
+static int variable = 5;
+static int variable = 4;
+
+int translater (int var){
+  var = (var + variable);
+  return var;
+}
+
+test {
+  print translater(1);
+}

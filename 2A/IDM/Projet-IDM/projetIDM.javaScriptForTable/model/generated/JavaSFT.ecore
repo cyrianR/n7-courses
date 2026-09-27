@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="javaSFT" nsURI="http://www.JavaSFT.projetIDM" nsPrefix="javaSFT">
+  <eClassifiers xsi:type="ecore:EClass" name="JavaSFT"/>
+  <eClassifiers xsi:type="ecore:EClass" name="TypeList">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="TypeListNumber">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ClassName">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Class" eSuperTypes="#//JavaSFT">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="className" eType="#//ClassName"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="methode" eType="#//Methode"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Methode">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="parameter" eType="#//Parameter"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="parameters" upperBound="-1"
+        eType="#//Parameter" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="listName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="constants" upperBound="-1"
+        eType="#//Constant" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="operations" upperBound="-1"
+        eType="#//Operation" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="return" eType="#//Return"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Parameter">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="varName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Return">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="varName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Constant">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="constDeclaration" eType="#//ConstantDeclaration"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="constAssignment" eType="#//ConstantAssignment"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ConstantDeclaration">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="varName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ConstantAssignment">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Operation"/>
+  <eClassifiers xsi:type="ecore:EClass" name="OperationUnaire" eSuperTypes="#//Operation"/>
+  <eClassifiers xsi:type="ecore:EClass" name="OperationBinaire" eSuperTypes="#//Operation"/>
+  <eClassifiers xsi:type="ecore:EClass" name="SumUnaire" eSuperTypes="#//OperationUnaire">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="varNameLeft" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="listNameRight" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ProductUnaire" eSuperTypes="#//OperationUnaire">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="varNameLeft" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="listNameRight" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="MinUnaire" eSuperTypes="#//OperationUnaire">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="varNameLeft" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="listNameRight" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="MaxUnaire" eSuperTypes="#//OperationUnaire">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="varNameLeft" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="listNameRight" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="OppositeUnaire" eSuperTypes="#//OperationUnaire"/>
+  <eClassifiers xsi:type="ecore:EClass" name="OppositeUnaireList" eSuperTypes="#//OppositeUnaire">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="typeListLeft" eType="#//TypeListNumber"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="listNameLeft" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="typeListRight" eType="#//TypeListNumber"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="listNameRight" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="OppositeUnaireNumber" eSuperTypes="#//OppositeUnaire">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="varNameLeft" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="varNameRight" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="CosUnaire" eSuperTypes="#//OperationUnaire"/>
+  <eClassifiers xsi:type="ecore:EClass" name="CosUnaireList" eSuperTypes="#//CosUnaire">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="typeListLeft" eType="#//TypeListNumber"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="listNameLeft" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="typeListRight" eType="#//TypeListNumber"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="listNameRight" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="CosUnaireNumber" eSuperTypes="#//CosUnaire">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="varNameLeft" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="varNameRight" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="SinUnaire" eSuperTypes="#//OperationUnaire"/>
+  <eClassifiers xsi:type="ecore:EClass" name="SinUnaireList" eSuperTypes="#//SinUnaire">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="typeListLeft" eType="#//TypeListNumber"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="listNameLeft" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="typeListRight" eType="#//TypeListNumber"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="listNameRight" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="SinUnaireNumber" eSuperTypes="#//SinUnaire">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="varNameLeft" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="varNameRight" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="SqrtUnaire" eSuperTypes="#//OperationUnaire"/>
+  <eClassifiers xsi:type="ecore:EClass" name="SqrtUnaireList" eSuperTypes="#//SqrtUnaire">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="typeListLeft" eType="#//TypeListNumber"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="listNameLeft" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="typeListRight" eType="#//TypeListNumber"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="listNameRight" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="SqrtUnaireNumber" eSuperTypes="#//SqrtUnaire">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="varNameLeft" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="varNameRight" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ExpUnaire" eSuperTypes="#//OperationUnaire"/>
+  <eClassifiers xsi:type="ecore:EClass" name="ExpUnaireList" eSuperTypes="#//ExpUnaire">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="typeListLeft" eType="#//TypeListNumber"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="listNameLeft" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="typeListRight" eType="#//TypeListNumber"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="listNameRight" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ExpUnaireNumber" eSuperTypes="#//ExpUnaire">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="varNameLeft" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="varNameRight" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="SumBinaire" eSuperTypes="#//OperationBinaire"/>
+  <eClassifiers xsi:type="ecore:EClass" name="SumBinaireListVal" eSuperTypes="#//SumBinaire">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="typeListLeft" eType="#//TypeList"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="listNameLeft" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="typeListRight" eType="#//TypeList"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="listNameRight" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="valNameRight" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="SumBinaireListList" eSuperTypes="#//SumBinaire">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="typeListLeft" eType="#//TypeList"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="listNameLeft" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="typeListRight" eType="#//TypeList"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="listNameRight" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="listNameRight2" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="SumBinaireValVal" eSuperTypes="#//SumBinaire">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="typeVarLeft" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="varNameLeft" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="varNameRight1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="varNameRight2" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ProductBinaire" eSuperTypes="#//OperationBinaire"/>
+  <eClassifiers xsi:type="ecore:EClass" name="ProductBinaireListVal" eSuperTypes="#//ProductBinaire">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="typeListLeft" eType="#//TypeListNumber"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="listNameLeft" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="typeListRight" eType="#//TypeListNumber"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="listNameRight" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="valNameRight" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ProductBinaireListList" eSuperTypes="#//ProductBinaire">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="typeListLeft" eType="#//TypeListNumber"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="listNameLeft" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="typeListRight" eType="#//TypeListNumber"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="listNameRight" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="listNameRight2" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ProductBinaireValVal" eSuperTypes="#//ProductBinaire">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="typeVarLeft" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="varNameLeft" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="varNameRight1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="varNameRight2" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="DivisionBinaire" eSuperTypes="#//OperationBinaire"/>
+  <eClassifiers xsi:type="ecore:EClass" name="DivisionBinaireListVal" eSuperTypes="#//DivisionBinaire">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="typeListLeft" eType="#//TypeListNumber"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="listNameLeft" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="typeListRight" eType="#//TypeListNumber"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="listNameRight" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="valNameRight" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="DivisionBinaireValList" eSuperTypes="#//DivisionBinaire">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="typeListLeft" eType="#//TypeListNumber"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="listNameLeft" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="typeListRight" eType="#//TypeListNumber"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="listNameRight" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="valNameRight" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="DivisionBinaireListList" eSuperTypes="#//DivisionBinaire">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="typeListLeft" eType="#//TypeListNumber"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="listNameLeft" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="typeListRight" eType="#//TypeListNumber"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="listNameRight" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="listNameRight2" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="DivisionBinaireValVal" eSuperTypes="#//DivisionBinaire">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="typeVarLeft" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="varNameLeft" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="varNameRight1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="varNameRight2" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="MinBinaire" eSuperTypes="#//OperationBinaire"/>
+  <eClassifiers xsi:type="ecore:EClass" name="MinBinaireListVal" eSuperTypes="#//MinBinaire">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="typeListLeft" eType="#//TypeListNumber"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="listNameLeft" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="typeListRight" eType="#//TypeListNumber"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="listNameRight" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="valNameRight" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="MinBinaireListList" eSuperTypes="#//MinBinaire">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="typeListLeft" eType="#//TypeListNumber"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="listNameLeft" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="typeListRight" eType="#//TypeListNumber"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="listNameRight" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="listNameRight2" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="MinBinaireValVal" eSuperTypes="#//MinBinaire">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="typeVarLeft" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="varNameLeft" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="varNameRight1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="varNameRight2" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="MaxBinaire" eSuperTypes="#//OperationBinaire"/>
+  <eClassifiers xsi:type="ecore:EClass" name="MaxBinaireListVal" eSuperTypes="#//MaxBinaire">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="typeListLeft" eType="#//TypeListNumber"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="listNameLeft" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="typeListRight" eType="#//TypeListNumber"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="listNameRight" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="valNameRight" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="MaxBinaireListList" eSuperTypes="#//MaxBinaire">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="typeListLeft" eType="#//TypeListNumber"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="listNameLeft" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="typeListRight" eType="#//TypeListNumber"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="listNameRight" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="listNameRight2" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="MaxBinaireValVal" eSuperTypes="#//MaxBinaire">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="typeVarLeft" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="varNameLeft" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="varNameRight1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="varNameRight2" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+</ecore:EPackage>

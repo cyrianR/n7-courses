@@ -1,0 +1,10 @@
+test{
+  int z = 3;
+  int* y = &z;
+
+  rat q = [3/4];
+  rat* p = &q;
+
+  bool a = true;
+  bool* b = &a;
+}

@@ -1,0 +1,984 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:miniLanguage="http://www.example.org/miniLanguage" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style">
+  <viewpoint:DAnalysis uid="_QQtVALe1Ee-LU5OmpAHmUw" selectedViews="_kuKyQLhmEe-8W5-j3nYCSQ" version="15.2.0.202303281325">
+    <semanticResources>My.xmi</semanticResources>
+    <ownedViews xmi:type="viewpoint:DView" uid="_kuKyQLhmEe-8W5-j3nYCSQ">
+      <viewpoint xmi:type="description:Viewpoint" href="platform:/resource/projetIDM.miniLanguage.design/description/miniLanguage.odesign#//@ownedViewpoints[name='miniLanguageViewpoint']"/>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_2OEFsLhoEe-8W5-j3nYCSQ" name="MiniLanguage My representation" repPath="#_2ODeoLhoEe-8W5-j3nYCSQ" changeId="1734113839411">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/resource/projetIDM.miniLanguage.design/description/miniLanguage.odesign#//@ownedViewpoints[name='miniLanguageViewpoint']/@ownedRepresentations[name='MiniLanguage']"/>
+        <target xmi:type="miniLanguage:MiniLanguage" href="My.xmi#/"/>
+      </ownedRepresentationDescriptors>
+    </ownedViews>
+  </viewpoint:DAnalysis>
+  <diagram:DSemanticDiagram uid="_2ODeoLhoEe-8W5-j3nYCSQ">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_2OEswLhoEe-8W5-j3nYCSQ" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_2OEswbhoEe-8W5-j3nYCSQ" type="Sirius" element="_2ODeoLhoEe-8W5-j3nYCSQ" measurementUnit="Pixel">
+        <children xmi:type="notation:Node" xmi:id="_2OKzZLhoEe-8W5-j3nYCSQ" type="2001" element="_2OGh8LhoEe-8W5-j3nYCSQ">
+          <children xmi:type="notation:Node" xmi:id="_2OLacLhoEe-8W5-j3nYCSQ" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_2OLacbhoEe-8W5-j3nYCSQ" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_2OQS8LhoEe-8W5-j3nYCSQ" type="3003" element="_2OHJALhoEe-8W5-j3nYCSQ">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_2OQS8bhoEe-8W5-j3nYCSQ" fontName="Ubuntu"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_2OQS8rhoEe-8W5-j3nYCSQ"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_vwlrI7iYEe-Mvb3JCZGmEA" type="3001" element="_vvxy0LiYEe-Mvb3JCZGmEA">
+            <children xmi:type="notation:Node" xmi:id="_vwlrJriYEe-Mvb3JCZGmEA" type="5001">
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_vwlrJ7iYEe-Mvb3JCZGmEA" y="5"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_vwlrKLiYEe-Mvb3JCZGmEA" type="3003" element="_vvxy0biYEe-Mvb3JCZGmEA">
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_vwlrKbiYEe-Mvb3JCZGmEA" fontName="Ubuntu"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_vwlrKriYEe-Mvb3JCZGmEA"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_vwlrJLiYEe-Mvb3JCZGmEA" fontName="Ubuntu" fontHeight="12"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_vwlrJbiYEe-Mvb3JCZGmEA" x="105" y="16" width="20" height="20"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_2OKzZbhoEe-8W5-j3nYCSQ" fontName="Ubuntu" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_2OKzZrhoEe-8W5-j3nYCSQ" x="80" y="220" width="150" height="50"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_2OOdyrhoEe-8W5-j3nYCSQ" type="2001" element="_2OI-NLhoEe-8W5-j3nYCSQ">
+          <children xmi:type="notation:Node" xmi:id="_2OPE0LhoEe-8W5-j3nYCSQ" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_2OPE0bhoEe-8W5-j3nYCSQ" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_McRB5biYEe-Mvb3JCZGmEA" type="3001" element="_Mbj3SbiYEe-Mvb3JCZGmEA">
+            <children xmi:type="notation:Node" xmi:id="_McRB6LiYEe-Mvb3JCZGmEA" type="5001">
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_McRB6biYEe-Mvb3JCZGmEA" y="5"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_McRB77iYEe-Mvb3JCZGmEA" type="3003" element="_Mbj3SriYEe-Mvb3JCZGmEA">
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_McRB8LiYEe-Mvb3JCZGmEA" fontName="Ubuntu"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_McRB8biYEe-Mvb3JCZGmEA"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_McRB5riYEe-Mvb3JCZGmEA" fontName="Ubuntu" fontHeight="12"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_McRB57iYEe-Mvb3JCZGmEA" x="-22" y="14" width="30" height="30"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_McRB6riYEe-Mvb3JCZGmEA" type="3001" element="_MbkeULiYEe-Mvb3JCZGmEA">
+            <children xmi:type="notation:Node" xmi:id="_McRB7biYEe-Mvb3JCZGmEA" type="5001">
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_McRB7riYEe-Mvb3JCZGmEA" y="5"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_McRo8LiYEe-Mvb3JCZGmEA" type="3003" element="_MbkeUbiYEe-Mvb3JCZGmEA">
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_McRo8biYEe-Mvb3JCZGmEA" fontName="Ubuntu"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_McRo8riYEe-Mvb3JCZGmEA"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_McRB67iYEe-Mvb3JCZGmEA" fontName="Ubuntu" fontHeight="12"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_McRB7LiYEe-Mvb3JCZGmEA" x="166" y="14" width="30" height="29"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_7XRIcLiaEe-Mvb3JCZGmEA" type="3003" element="_7Wkk4biaEe-Mvb3JCZGmEA">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_7XRIcbiaEe-Mvb3JCZGmEA" fontName="Ubuntu"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_7XRIcriaEe-Mvb3JCZGmEA"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_2OOdy7hoEe-8W5-j3nYCSQ" fontName="Ubuntu" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_2OOdzLhoEe-8W5-j3nYCSQ" x="666" y="294" width="200" height="80"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_2OPE0rhoEe-8W5-j3nYCSQ" type="2001" element="_2OJlQrhoEe-8W5-j3nYCSQ">
+          <children xmi:type="notation:Node" xmi:id="_2OPE1bhoEe-8W5-j3nYCSQ" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_2OPE1rhoEe-8W5-j3nYCSQ" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_x9YIQLiXEe-Mvb3JCZGmEA" type="3001" element="_x8ae8riXEe-Mvb3JCZGmEA">
+            <children xmi:type="notation:Node" xmi:id="_x9YIQ7iXEe-Mvb3JCZGmEA" type="5001">
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_x9YIRLiXEe-Mvb3JCZGmEA" y="5"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_x9YvVbiXEe-Mvb3JCZGmEA" type="3003" element="_x8ae87iXEe-Mvb3JCZGmEA">
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_x9YvVriXEe-Mvb3JCZGmEA" fontName="Ubuntu"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_x9YvV7iXEe-Mvb3JCZGmEA"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_x9YIQbiXEe-Mvb3JCZGmEA" fontName="Ubuntu" fontHeight="12"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_x9YIQriXEe-Mvb3JCZGmEA" x="-22" y="44" width="30" height="30"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_x9YvULiXEe-Mvb3JCZGmEA" type="3001" element="_x8bGAbiXEe-Mvb3JCZGmEA">
+            <children xmi:type="notation:Node" xmi:id="_x9YvU7iXEe-Mvb3JCZGmEA" type="5001">
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_x9YvVLiXEe-Mvb3JCZGmEA" y="5"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_x9YvWLiXEe-Mvb3JCZGmEA" type="3003" element="_x8bGAriXEe-Mvb3JCZGmEA">
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_x9YvWbiXEe-Mvb3JCZGmEA" fontName="Ubuntu"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_x9YvWriXEe-Mvb3JCZGmEA"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_x9YvUbiXEe-Mvb3JCZGmEA" fontName="Ubuntu" fontHeight="12"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_x9YvUriXEe-Mvb3JCZGmEA" x="-22" y="8" width="30" height="30"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_A_qbsLiYEe-Mvb3JCZGmEA" type="3001" element="_A-6NyLiYEe-Mvb3JCZGmEA">
+            <children xmi:type="notation:Node" xmi:id="_A_qbs7iYEe-Mvb3JCZGmEA" type="5001">
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_A_qbtLiYEe-Mvb3JCZGmEA" y="5"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_A_rCwLiYEe-Mvb3JCZGmEA" type="3003" element="_A-6NybiYEe-Mvb3JCZGmEA">
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_A_rCwbiYEe-Mvb3JCZGmEA" fontName="Ubuntu"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_A_rCwriYEe-Mvb3JCZGmEA"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_A_qbsbiYEe-Mvb3JCZGmEA" fontName="Ubuntu" fontHeight="12"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_A_qbsriYEe-Mvb3JCZGmEA" x="192" y="20" width="36" height="33"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_7XRIc7iaEe-Mvb3JCZGmEA" type="3003" element="_7WmaELiaEe-Mvb3JCZGmEA">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_7XRIdLiaEe-Mvb3JCZGmEA" fontName="Ubuntu"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_7XRIdbiaEe-Mvb3JCZGmEA"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_2OPE07hoEe-8W5-j3nYCSQ" fontName="Ubuntu" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_2OPE1LhoEe-8W5-j3nYCSQ" x="356" y="284" width="200" height="80"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_pXlsQLiZEe-Mvb3JCZGmEA" type="2001" element="_pW3TjbiZEe-Mvb3JCZGmEA">
+          <children xmi:type="notation:Node" xmi:id="_pXlsQ7iZEe-Mvb3JCZGmEA" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_pXlsRLiZEe-Mvb3JCZGmEA" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_pXmTULiZEe-Mvb3JCZGmEA" type="3001" element="_pW5IsbiZEe-Mvb3JCZGmEA">
+            <children xmi:type="notation:Node" xmi:id="_pXmTU7iZEe-Mvb3JCZGmEA" type="5001">
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_pXmTVLiZEe-Mvb3JCZGmEA" y="5"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_pXmTWLiZEe-Mvb3JCZGmEA" type="3003" element="_pW5IsriZEe-Mvb3JCZGmEA">
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_pXmTWbiZEe-Mvb3JCZGmEA" fontName="Ubuntu"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_pXmTWriZEe-Mvb3JCZGmEA"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_pXmTUbiZEe-Mvb3JCZGmEA" fontName="Ubuntu" fontHeight="12"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_pXmTUriZEe-Mvb3JCZGmEA" x="42" y="12" width="20" height="20"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_HRkMsLiaEe-Mvb3JCZGmEA" type="3003" element="_HQcLXbiaEe-Mvb3JCZGmEA">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_HRkMsbiaEe-Mvb3JCZGmEA" fontName="Ubuntu"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_HRkMsriaEe-Mvb3JCZGmEA"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_pXlsQbiZEe-Mvb3JCZGmEA" fontName="Ubuntu" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_pXlsQriZEe-Mvb3JCZGmEA" x="116" y="351" width="50" height="50"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_C7WMwLl-Ee-c1fafAffaXw" type="2001" element="_C7PfELl-Ee-c1fafAffaXw">
+          <children xmi:type="notation:Node" xmi:id="_C7Wz0Ll-Ee-c1fafAffaXw" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_C7Wz0bl-Ee-c1fafAffaXw" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_C7Xa4Ll-Ee-c1fafAffaXw" type="3001" element="_C7QGIbl-Ee-c1fafAffaXw">
+            <children xmi:type="notation:Node" xmi:id="_C7Xa47l-Ee-c1fafAffaXw" type="5001">
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_C7Xa5Ll-Ee-c1fafAffaXw" y="5"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_C7YB87l-Ee-c1fafAffaXw" type="3003" element="_C7QGIrl-Ee-c1fafAffaXw">
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_C7YB9Ll-Ee-c1fafAffaXw" fontName="Ubuntu"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_C7YB9bl-Ee-c1fafAffaXw"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_C7Xa4bl-Ee-c1fafAffaXw" fontColor="8947848" fontName="Ubuntu" fontHeight="12"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_C7Xa4rl-Ee-c1fafAffaXw" x="42" y="30" width="20" height="20"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_C7YB8Ll-Ee-c1fafAffaXw" type="3003" element="_C7PfEbl-Ee-c1fafAffaXw">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_C7YB8bl-Ee-c1fafAffaXw" fontName="Ubuntu"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_C7YB8rl-Ee-c1fafAffaXw"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_C7WMwbl-Ee-c1fafAffaXw" fontName="Ubuntu" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_C7WMwrl-Ee-c1fafAffaXw" x="216" y="132" width="50" height="50"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_Dk6uMLl-Ee-c1fafAffaXw" type="2001" element="_DkyLULl-Ee-c1fafAffaXw">
+          <children xmi:type="notation:Node" xmi:id="_Dk7VQLl-Ee-c1fafAffaXw" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_Dk7VQbl-Ee-c1fafAffaXw" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_Dk78ULl-Ee-c1fafAffaXw" type="3001" element="_DkyyYbl-Ee-c1fafAffaXw">
+            <children xmi:type="notation:Node" xmi:id="_Dk78U7l-Ee-c1fafAffaXw" type="5001">
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_Dk78VLl-Ee-c1fafAffaXw" y="5"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_Dk9Kc7l-Ee-c1fafAffaXw" type="3003" element="_DkyyYrl-Ee-c1fafAffaXw">
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_Dk9KdLl-Ee-c1fafAffaXw" fontName="Ubuntu"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Dk9Kdbl-Ee-c1fafAffaXw"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_Dk78Ubl-Ee-c1fafAffaXw" fontColor="8947848" fontName="Ubuntu" fontHeight="12"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Dk78Url-Ee-c1fafAffaXw" x="-22" y="27" width="30" height="30"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_Dk8jYLl-Ee-c1fafAffaXw" type="3001" element="_DkzZcLl-Ee-c1fafAffaXw">
+            <children xmi:type="notation:Node" xmi:id="_Dk8jY7l-Ee-c1fafAffaXw" type="5001">
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_Dk8jZLl-Ee-c1fafAffaXw" y="5"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_Dk9xgLl-Ee-c1fafAffaXw" type="3003" element="_DkzZcbl-Ee-c1fafAffaXw">
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_Dk9xgbl-Ee-c1fafAffaXw" fontName="Ubuntu"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Dk9xgrl-Ee-c1fafAffaXw"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_Dk8jYbl-Ee-c1fafAffaXw" fontColor="8947848" fontName="Ubuntu" fontHeight="12"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Dk8jYrl-Ee-c1fafAffaXw" x="192" y="27" width="30" height="30"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_Dk9KcLl-Ee-c1fafAffaXw" type="3003" element="_DkyLUbl-Ee-c1fafAffaXw">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_Dk9Kcbl-Ee-c1fafAffaXw" fontName="Ubuntu"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Dk9Kcrl-Ee-c1fafAffaXw"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_Dk6uMbl-Ee-c1fafAffaXw" fontName="Ubuntu" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Dk6uMrl-Ee-c1fafAffaXw" x="380" y="141" width="200" height="80"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_Et5IcLl-Ee-c1fafAffaXw" type="2001" element="_EtuJULl-Ee-c1fafAffaXw">
+          <children xmi:type="notation:Node" xmi:id="_Et5Ic7l-Ee-c1fafAffaXw" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_Et5IdLl-Ee-c1fafAffaXw" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_Et5vgLl-Ee-c1fafAffaXw" type="3001" element="_Etv-gbl-Ee-c1fafAffaXw">
+            <children xmi:type="notation:Node" xmi:id="_Et6WkLl-Ee-c1fafAffaXw" type="5001">
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_Et6Wkbl-Ee-c1fafAffaXw" y="5"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_Et8LwLl-Ee-c1fafAffaXw" type="3003" element="_Etv-grl-Ee-c1fafAffaXw">
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_Et8Lwbl-Ee-c1fafAffaXw" fontName="Ubuntu"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Et8Lwrl-Ee-c1fafAffaXw"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_Et5vgbl-Ee-c1fafAffaXw" fontColor="8947848" fontName="Ubuntu" fontHeight="12"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Et5vgrl-Ee-c1fafAffaXw" x="-22" width="30" height="30"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_Et6Wkrl-Ee-c1fafAffaXw" type="3001" element="_EtwlkLl-Ee-c1fafAffaXw">
+            <children xmi:type="notation:Node" xmi:id="_Et69oLl-Ee-c1fafAffaXw" type="5001">
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_Et69obl-Ee-c1fafAffaXw" y="5"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_Et8Lw7l-Ee-c1fafAffaXw" type="3003" element="_Etwlkbl-Ee-c1fafAffaXw">
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_Et8LxLl-Ee-c1fafAffaXw" fontName="Ubuntu"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Et8Lxbl-Ee-c1fafAffaXw"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_Et6Wk7l-Ee-c1fafAffaXw" fontColor="8947848" fontName="Ubuntu" fontHeight="12"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Et6WlLl-Ee-c1fafAffaXw" x="-22" y="50" width="30" height="30"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_Et69orl-Ee-c1fafAffaXw" type="3001" element="_Etwlkrl-Ee-c1fafAffaXw">
+            <children xmi:type="notation:Node" xmi:id="_Et7ksLl-Ee-c1fafAffaXw" type="5001">
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_Et7ksbl-Ee-c1fafAffaXw" y="5"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_Et8y0Ll-Ee-c1fafAffaXw" type="3003" element="_Etwlk7l-Ee-c1fafAffaXw">
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_Et8y0bl-Ee-c1fafAffaXw" fontName="Ubuntu"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Et8y0rl-Ee-c1fafAffaXw"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_Et69o7l-Ee-c1fafAffaXw" fontColor="8947848" fontName="Ubuntu" fontHeight="12"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Et69pLl-Ee-c1fafAffaXw" x="192" y="19" width="30" height="30"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_Et7ksrl-Ee-c1fafAffaXw" type="3003" element="_EtuwYLl-Ee-c1fafAffaXw">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_Et7ks7l-Ee-c1fafAffaXw" fontName="Ubuntu"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Et7ktLl-Ee-c1fafAffaXw"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_Et5Icbl-Ee-c1fafAffaXw" fontName="Ubuntu" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Et5Icrl-Ee-c1fafAffaXw" x="736" y="141" width="200" height="80"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_FCopYLl-Ee-c1fafAffaXw" type="2001" element="_FCmNILl-Ee-c1fafAffaXw">
+          <children xmi:type="notation:Node" xmi:id="_FCopY7l-Ee-c1fafAffaXw" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_FCopZLl-Ee-c1fafAffaXw" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_FCopZbl-Ee-c1fafAffaXw" type="3001" element="_FCmNI7l-Ee-c1fafAffaXw">
+            <children xmi:type="notation:Node" xmi:id="_FCopaLl-Ee-c1fafAffaXw" type="5001">
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_FCopabl-Ee-c1fafAffaXw" y="5"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_FCpQc7l-Ee-c1fafAffaXw" type="3003" element="_FCmNJLl-Ee-c1fafAffaXw">
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_FCpQdLl-Ee-c1fafAffaXw" fontName="Ubuntu"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_FCpQdbl-Ee-c1fafAffaXw"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_FCopZrl-Ee-c1fafAffaXw" fontColor="8947848" fontName="Ubuntu" fontHeight="12"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_FCopZ7l-Ee-c1fafAffaXw" x="142" y="30" width="20" height="20"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_FCpQcLl-Ee-c1fafAffaXw" type="3003" element="_FCmNIbl-Ee-c1fafAffaXw">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_FCpQcbl-Ee-c1fafAffaXw" fontName="Ubuntu"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_FCpQcrl-Ee-c1fafAffaXw"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_FCopYbl-Ee-c1fafAffaXw" fontName="Ubuntu" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_FCopYrl-Ee-c1fafAffaXw" x="536" y="40" width="150" height="50"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_H_1aULl-Ee-c1fafAffaXw" type="2001" element="_H_yXALl-Ee-c1fafAffaXw">
+          <children xmi:type="notation:Node" xmi:id="_H_1aU7l-Ee-c1fafAffaXw" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_H_1aVLl-Ee-c1fafAffaXw" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_H_2BYLl-Ee-c1fafAffaXw" type="3001" element="_H_yXA7l-Ee-c1fafAffaXw">
+            <children xmi:type="notation:Node" xmi:id="_H_2BY7l-Ee-c1fafAffaXw" type="5001">
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_H_2BZLl-Ee-c1fafAffaXw" y="5"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_H_2oc7l-Ee-c1fafAffaXw" type="3003" element="_H_yXBLl-Ee-c1fafAffaXw">
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_H_2odLl-Ee-c1fafAffaXw" fontName="Ubuntu"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_H_2odbl-Ee-c1fafAffaXw"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_H_2BYbl-Ee-c1fafAffaXw" fontColor="8947848" fontName="Ubuntu" fontHeight="12"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_H_2BYrl-Ee-c1fafAffaXw" x="-22" y="7" width="30" height="30"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_H_2BZbl-Ee-c1fafAffaXw" type="3001" element="_H_y-ELl-Ee-c1fafAffaXw">
+            <children xmi:type="notation:Node" xmi:id="_H_2BaLl-Ee-c1fafAffaXw" type="5001">
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_H_2Babl-Ee-c1fafAffaXw" y="5"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_H_2odrl-Ee-c1fafAffaXw" type="3003" element="_H_y-Ebl-Ee-c1fafAffaXw">
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_H_2od7l-Ee-c1fafAffaXw" fontName="Ubuntu"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_H_2oeLl-Ee-c1fafAffaXw"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_H_2BZrl-Ee-c1fafAffaXw" fontColor="8947848" fontName="Ubuntu" fontHeight="12"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_H_2BZ7l-Ee-c1fafAffaXw" x="-22" y="43" width="30" height="30"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_H_2Barl-Ee-c1fafAffaXw" type="3001" element="_H_y-Erl-Ee-c1fafAffaXw">
+            <children xmi:type="notation:Node" xmi:id="_H_2Bbbl-Ee-c1fafAffaXw" type="5001">
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_H_2Bbrl-Ee-c1fafAffaXw" y="5"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_H_2oebl-Ee-c1fafAffaXw" type="3003" element="_H_y-E7l-Ee-c1fafAffaXw">
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_H_2oerl-Ee-c1fafAffaXw" fontName="Ubuntu"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_H_2oe7l-Ee-c1fafAffaXw"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_H_2Ba7l-Ee-c1fafAffaXw" fontColor="8947848" fontName="Ubuntu" fontHeight="12"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_H_2BbLl-Ee-c1fafAffaXw" x="192" y="3" width="30" height="30"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_H_2ocLl-Ee-c1fafAffaXw" type="3003" element="_H_yXAbl-Ee-c1fafAffaXw">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_H_2ocbl-Ee-c1fafAffaXw" fontName="Ubuntu"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_H_2ocrl-Ee-c1fafAffaXw"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_H_1aUbl-Ee-c1fafAffaXw" fontName="Ubuntu" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_H_1aUrl-Ee-c1fafAffaXw" x="988" y="49" width="200" height="80"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_MfOWxrl-Ee-c1fafAffaXw" type="2001" element="_MfL6gLl-Ee-c1fafAffaXw">
+          <children xmi:type="notation:Node" xmi:id="_MfOWybl-Ee-c1fafAffaXw" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_MfOWyrl-Ee-c1fafAffaXw" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_MfO90Ll-Ee-c1fafAffaXw" type="3001" element="_MfL6g7l-Ee-c1fafAffaXw">
+            <children xmi:type="notation:Node" xmi:id="_MfO907l-Ee-c1fafAffaXw" type="5001">
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_MfO91Ll-Ee-c1fafAffaXw" y="5"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_MfO92Ll-Ee-c1fafAffaXw" type="3003" element="_MfL6hLl-Ee-c1fafAffaXw">
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_MfO92bl-Ee-c1fafAffaXw" fontName="Ubuntu"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_MfO92rl-Ee-c1fafAffaXw"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_MfO90bl-Ee-c1fafAffaXw" fontColor="8947848" fontName="Ubuntu" fontHeight="12"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_MfO90rl-Ee-c1fafAffaXw" x="-12" y="15" width="20" height="20"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_MfO91bl-Ee-c1fafAffaXw" type="3003" element="_MfL6gbl-Ee-c1fafAffaXw">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_MfO91rl-Ee-c1fafAffaXw" fontName="Ubuntu"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_MfO917l-Ee-c1fafAffaXw"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_MfOWx7l-Ee-c1fafAffaXw" fontName="Ubuntu" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_MfOWyLl-Ee-c1fafAffaXw" x="1576" y="205" width="130" height="50"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_cVGqULl-Ee-c1fafAffaXw" type="2001" element="_cU8SQLl-Ee-c1fafAffaXw">
+          <children xmi:type="notation:Node" xmi:id="_cVHRYLl-Ee-c1fafAffaXw" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_cVHRYbl-Ee-c1fafAffaXw" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_cVH4cLl-Ee-c1fafAffaXw" type="3001" element="_cU85Ubl-Ee-c1fafAffaXw">
+            <children xmi:type="notation:Node" xmi:id="_cVH4c7l-Ee-c1fafAffaXw" type="5001">
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_cVH4dLl-Ee-c1fafAffaXw" y="5"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_cVJGk7l-Ee-c1fafAffaXw" type="3003" element="_cU9gYLl-Ee-c1fafAffaXw">
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_cVJGlLl-Ee-c1fafAffaXw" fontName="Ubuntu"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cVJGlbl-Ee-c1fafAffaXw"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_cVH4cbl-Ee-c1fafAffaXw" fontColor="8947848" fontName="Ubuntu" fontHeight="12"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cVH4crl-Ee-c1fafAffaXw" x="-22" width="30" height="30"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_cVH4dbl-Ee-c1fafAffaXw" type="3001" element="_cU9gYbl-Ee-c1fafAffaXw">
+            <children xmi:type="notation:Node" xmi:id="_cVIfgLl-Ee-c1fafAffaXw" type="5001">
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_cVIfgbl-Ee-c1fafAffaXw" y="5"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_cVJGlrl-Ee-c1fafAffaXw" type="3003" element="_cU9gYrl-Ee-c1fafAffaXw">
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_cVJGl7l-Ee-c1fafAffaXw" fontName="Ubuntu"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cVJGmLl-Ee-c1fafAffaXw"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_cVH4drl-Ee-c1fafAffaXw" fontColor="8947848" fontName="Ubuntu" fontHeight="12"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cVH4d7l-Ee-c1fafAffaXw" x="-22" y="32" width="30" height="30"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_cVIfgrl-Ee-c1fafAffaXw" type="3001" element="_cU9gY7l-Ee-c1fafAffaXw">
+            <children xmi:type="notation:Node" xmi:id="_cVIfhbl-Ee-c1fafAffaXw" type="5001">
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_cVIfhrl-Ee-c1fafAffaXw" y="5"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_cVJGmbl-Ee-c1fafAffaXw" type="3003" element="_cU-HcLl-Ee-c1fafAffaXw">
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_cVJGmrl-Ee-c1fafAffaXw" fontName="Ubuntu"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cVJGm7l-Ee-c1fafAffaXw"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_cVIfg7l-Ee-c1fafAffaXw" fontColor="8947848" fontName="Ubuntu" fontHeight="12"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cVIfhLl-Ee-c1fafAffaXw" x="192" y="32" width="30" height="30"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_cVJGkLl-Ee-c1fafAffaXw" type="3003" element="_cU8SQbl-Ee-c1fafAffaXw">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_cVJGkbl-Ee-c1fafAffaXw" fontName="Ubuntu"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cVJGkrl-Ee-c1fafAffaXw"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_cVGqUbl-Ee-c1fafAffaXw" fontName="Ubuntu" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cVGqUrl-Ee-c1fafAffaXw" x="1224" y="205" width="200" height="80"/>
+        </children>
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_2OEswrhoEe-8W5-j3nYCSQ"/>
+        <edges xmi:type="notation:Edge" xmi:id="_L3ymYLiZEe-Mvb3JCZGmEA" type="4001" element="_L3sfzbiZEe-Mvb3JCZGmEA" source="_vwlrI7iYEe-Mvb3JCZGmEA" target="_x9YvULiXEe-Mvb3JCZGmEA">
+          <children xmi:type="notation:Node" xmi:id="_L3ymZLiZEe-Mvb3JCZGmEA" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_L3ymZbiZEe-Mvb3JCZGmEA" x="-4" y="-11"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_L3ymZriZEe-Mvb3JCZGmEA" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_L3ymZ7iZEe-Mvb3JCZGmEA" x="-2" y="8"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_L3ymaLiZEe-Mvb3JCZGmEA" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_L3ymabiZEe-Mvb3JCZGmEA" y="6"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_L3ymYbiZEe-Mvb3JCZGmEA"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_L3ymYriZEe-Mvb3JCZGmEA" fontName="Ubuntu" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_L3ymY7iZEe-Mvb3JCZGmEA" points="[2, 1, -107, -61]$[94, 53, -15, -9]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_L3ymariZEe-Mvb3JCZGmEA" id="(0.9,0.4827586206896552)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_L3yma7iZEe-Mvb3JCZGmEA" id="(0.5,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_24OmwLiZEe-Mvb3JCZGmEA" type="4001" element="_23ZgXLiZEe-Mvb3JCZGmEA" source="_pXmTULiZEe-Mvb3JCZGmEA" target="_x9YIQLiXEe-Mvb3JCZGmEA">
+          <children xmi:type="notation:Node" xmi:id="_24OmxLiZEe-Mvb3JCZGmEA" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_24OmxbiZEe-Mvb3JCZGmEA" x="-3" y="-15"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_24OmxriZEe-Mvb3JCZGmEA" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_24Omx7iZEe-Mvb3JCZGmEA" x="-7" y="9"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_24OmyLiZEe-Mvb3JCZGmEA" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_24OmybiZEe-Mvb3JCZGmEA" x="-1" y="8"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_24OmwbiZEe-Mvb3JCZGmEA"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_24OmwriZEe-Mvb3JCZGmEA" fontName="Ubuntu" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_24Omw7iZEe-Mvb3JCZGmEA" points="[10, -2, -171, 28]$[166, -28, -15, 2]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_24OmyriZEe-Mvb3JCZGmEA" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_24Omy7iZEe-Mvb3JCZGmEA" id="(0.5,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_wtbyMLl6Ee-c1fafAffaXw" type="4001" element="_wtYu8Ll6Ee-c1fafAffaXw" source="_A_qbsLiYEe-Mvb3JCZGmEA" target="_McRB5biYEe-Mvb3JCZGmEA">
+          <children xmi:type="notation:Node" xmi:id="_wtbyNLl6Ee-c1fafAffaXw" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_wtbyNbl6Ee-c1fafAffaXw" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_wtbyNrl6Ee-c1fafAffaXw" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_wtbyN7l6Ee-c1fafAffaXw" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_wtbyOLl6Ee-c1fafAffaXw" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_wtbyObl6Ee-c1fafAffaXw" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_wtbyMbl6Ee-c1fafAffaXw"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_wtbyMrl6Ee-c1fafAffaXw" fontName="Ubuntu" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_wtbyM7l6Ee-c1fafAffaXw" points="[0, 0, -66, 0]$[66, 0, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_wtbyOrl6Ee-c1fafAffaXw" id="(1.0,0.5757575757575758)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_wtbyO7l6Ee-c1fafAffaXw" id="(0.0,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_F5G-YLl-Ee-c1fafAffaXw" type="4001" element="_F5EiILl-Ee-c1fafAffaXw" source="_C7Xa4Ll-Ee-c1fafAffaXw" target="_Dk78ULl-Ee-c1fafAffaXw">
+          <children xmi:type="notation:Node" xmi:id="_F5G-ZLl-Ee-c1fafAffaXw" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_F5G-Zbl-Ee-c1fafAffaXw" x="-11" y="-9"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_F5G-Zrl-Ee-c1fafAffaXw" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_F5G-Z7l-Ee-c1fafAffaXw" x="-1" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_F5G-aLl-Ee-c1fafAffaXw" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_F5G-abl-Ee-c1fafAffaXw" x="2" y="4"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_F5G-Ybl-Ee-c1fafAffaXw"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_F5G-Yrl-Ee-c1fafAffaXw" fontName="Ubuntu" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_F5G-Y7l-Ee-c1fafAffaXw" points="[0, 0, -80, -21]$[80, 21, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_F5G-arl-Ee-c1fafAffaXw" id="(1.0,0.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_F5G-a7l-Ee-c1fafAffaXw" id="(0.0,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_GSThhLl-Ee-c1fafAffaXw" type="4001" element="_GSRFVLl-Ee-c1fafAffaXw" source="_FCopZbl-Ee-c1fafAffaXw" target="_Et5vgLl-Ee-c1fafAffaXw">
+          <children xmi:type="notation:Node" xmi:id="_GSUIkLl-Ee-c1fafAffaXw" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_GSUIkbl-Ee-c1fafAffaXw" x="-6" y="-6"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_GSUIkrl-Ee-c1fafAffaXw" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_GSUIk7l-Ee-c1fafAffaXw" x="1" y="14"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_GSUIlLl-Ee-c1fafAffaXw" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_GSUIlbl-Ee-c1fafAffaXw" x="2" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_GSThhbl-Ee-c1fafAffaXw"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_GSThhrl-Ee-c1fafAffaXw" fontName="Ubuntu" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_GSThh7l-Ee-c1fafAffaXw" points="[0, 0, -16, -78]$[16, 78, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_GSUIlrl-Ee-c1fafAffaXw" id="(1.0,0.4)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_GSUIl7l-Ee-c1fafAffaXw" id="(0.0,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_GnaO0Ll-Ee-c1fafAffaXw" type="4001" element="_GnP22Ll-Ee-c1fafAffaXw" source="_Dk8jYLl-Ee-c1fafAffaXw" target="_Et6Wkrl-Ee-c1fafAffaXw">
+          <children xmi:type="notation:Node" xmi:id="_GnaO1Ll-Ee-c1fafAffaXw" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_GnaO1bl-Ee-c1fafAffaXw" x="-3" y="-11"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_Gna14Ll-Ee-c1fafAffaXw" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Gna14bl-Ee-c1fafAffaXw" x="-2" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_Gna14rl-Ee-c1fafAffaXw" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Gna147l-Ee-c1fafAffaXw" x="-3" y="7"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_GnaO0bl-Ee-c1fafAffaXw"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_GnaO0rl-Ee-c1fafAffaXw" fontName="Ubuntu" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_GnaO07l-Ee-c1fafAffaXw" points="[0, 0, -112, -16]$[112, 16, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Gna15Ll-Ee-c1fafAffaXw" id="(1.0,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Gna15bl-Ee-c1fafAffaXw" id="(0.0,0.26666666666666666)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_I1M8ELl-Ee-c1fafAffaXw" type="4001" element="_I1J43Ll-Ee-c1fafAffaXw" source="_FCopZbl-Ee-c1fafAffaXw" target="_H_2BYLl-Ee-c1fafAffaXw">
+          <children xmi:type="notation:Node" xmi:id="_I1M8FLl-Ee-c1fafAffaXw" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_I1M8Fbl-Ee-c1fafAffaXw" x="-7" y="-17"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_I1M8Frl-Ee-c1fafAffaXw" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_I1M8F7l-Ee-c1fafAffaXw" x="-7" y="1"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_I1NjILl-Ee-c1fafAffaXw" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_I1NjIbl-Ee-c1fafAffaXw" x="-6" y="4"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_I1M8Ebl-Ee-c1fafAffaXw"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_I1M8Erl-Ee-c1fafAffaXw" fontName="Ubuntu" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_I1M8E7l-Ee-c1fafAffaXw" points="[0, 0, -268, 5]$[268, -5, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_I1NjIrl-Ee-c1fafAffaXw" id="(1.0,0.4)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_I1NjI7l-Ee-c1fafAffaXw" id="(0.0,0.5666666666666667)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_J8bp4Ll-Ee-c1fafAffaXw" type="4001" element="_J8Qq1Ll-Ee-c1fafAffaXw" source="_Et69orl-Ee-c1fafAffaXw" target="_H_2BZbl-Ee-c1fafAffaXw">
+          <children xmi:type="notation:Node" xmi:id="_J8bp5Ll-Ee-c1fafAffaXw" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_J8bp5bl-Ee-c1fafAffaXw" x="31" y="-4"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_J8bp5rl-Ee-c1fafAffaXw" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_J8bp57l-Ee-c1fafAffaXw" x="-10" y="1"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_J8cQ8Ll-Ee-c1fafAffaXw" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_J8cQ8bl-Ee-c1fafAffaXw" x="-12" y="-6"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_J8bp4bl-Ee-c1fafAffaXw"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_J8bp4rl-Ee-c1fafAffaXw" fontName="Ubuntu" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_J8bp47l-Ee-c1fafAffaXw" points="[0, 0, -8, 67]$[8, -67, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_J8cQ8rl-Ee-c1fafAffaXw" id="(1.0,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_J8cQ87l-Ee-c1fafAffaXw" id="(0.0,0.5333333333333333)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_ddkuQLl-Ee-c1fafAffaXw" type="4001" element="_dda9SLl-Ee-c1fafAffaXw" source="_McRB6riYEe-Mvb3JCZGmEA" target="_cVH4dbl-Ee-c1fafAffaXw">
+          <children xmi:type="notation:Node" xmi:id="_ddkuRLl-Ee-c1fafAffaXw" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ddkuRbl-Ee-c1fafAffaXw" x="1" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_ddkuRrl-Ee-c1fafAffaXw" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ddkuR7l-Ee-c1fafAffaXw" x="-1" y="9"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_ddkuSLl-Ee-c1fafAffaXw" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ddkuSbl-Ee-c1fafAffaXw" x="-2" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_ddkuQbl-Ee-c1fafAffaXw"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_ddkuQrl-Ee-c1fafAffaXw" fontName="Ubuntu" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_ddkuQ7l-Ee-c1fafAffaXw" points="[0, 0, -314, 62]$[314, -62, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_ddlVULl-Ee-c1fafAffaXw" id="(1.0,0.27586206896551724)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_ddlVUbl-Ee-c1fafAffaXw" id="(0.0,0.5666666666666667)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_dup3MLl-Ee-c1fafAffaXw" type="4001" element="_dum0BLl-Ee-c1fafAffaXw" source="_H_2Barl-Ee-c1fafAffaXw" target="_cVH4cLl-Ee-c1fafAffaXw">
+          <children xmi:type="notation:Node" xmi:id="_duqeQLl-Ee-c1fafAffaXw" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_duqeQbl-Ee-c1fafAffaXw" x="-5" y="-9"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_duqeQrl-Ee-c1fafAffaXw" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_duqeQ7l-Ee-c1fafAffaXw" x="3" y="9"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_duqeRLl-Ee-c1fafAffaXw" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_duqeRbl-Ee-c1fafAffaXw" x="4" y="11"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_dup3Mbl-Ee-c1fafAffaXw"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_dup3Mrl-Ee-c1fafAffaXw" fontName="Ubuntu" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_dup3M7l-Ee-c1fafAffaXw" points="[0, 0, -16, -123]$[16, 123, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_duqeRrl-Ee-c1fafAffaXw" id="(0.6666666666666666,1.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_duqeR7l-Ee-c1fafAffaXw" id="(0.4666666666666667,0.0)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_e6rlcLl-Ee-c1fafAffaXw" type="4001" element="_e6gmdLl-Ee-c1fafAffaXw" source="_cVIfgrl-Ee-c1fafAffaXw" target="_MfO90Ll-Ee-c1fafAffaXw">
+          <children xmi:type="notation:Node" xmi:id="_e6rldLl-Ee-c1fafAffaXw" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_e6rldbl-Ee-c1fafAffaXw" x="2" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_e6sMgLl-Ee-c1fafAffaXw" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_e6sMgbl-Ee-c1fafAffaXw" x="-2" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_e6sMgrl-Ee-c1fafAffaXw" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_e6sMg7l-Ee-c1fafAffaXw" x="-2" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_e6rlcbl-Ee-c1fafAffaXw"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_e6rlcrl-Ee-c1fafAffaXw" fontName="Ubuntu" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_e6rlc7l-Ee-c1fafAffaXw" points="[0, 0, -118, 32]$[110, -21, -8, 11]$[118, -22, 0, 10]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_e6sMhLl-Ee-c1fafAffaXw" id="(1.0,0.5333333333333333)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_e6sMhbl-Ee-c1fafAffaXw" id="(0.0,0.05)"/>
+        </edges>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_2OKMULhoEe-8W5-j3nYCSQ" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_2OKMUbhoEe-8W5-j3nYCSQ"/>
+    </ownedAnnotationEntries>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_2OGh8LhoEe-8W5-j3nYCSQ" name="param" width="15" height="5">
+      <target xmi:type="miniLanguage:Parameter" href="My.xmi#//@miniLanguageElement.2"/>
+      <semanticElements xmi:type="miniLanguage:Parameter" href="My.xmi#//@miniLanguageElement.2"/>
+      <ownedBorderedNodes xmi:type="diagram:DNode" uid="_vvxy0LiYEe-Mvb3JCZGmEA" name="param" outgoingEdges="_L3sfzbiZEe-Mvb3JCZGmEA" width="2" height="2">
+        <target xmi:type="miniLanguage:Output" href="My.xmi#//@miniLanguageElement.2/@output"/>
+        <semanticElements xmi:type="miniLanguage:Output" href="My.xmi#//@miniLanguageElement.2/@output"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:Square" uid="_vvxy0biYEe-Mvb3JCZGmEA" labelSize="12" labelColor="136,136,136" borderColor="136,136,136" labelPosition="node" width="2" height="2">
+          <description xmi:type="style:SquareDescription" href="platform:/resource/projetIDM.miniLanguage.design/description/miniLanguage.odesign#//@ownedViewpoints[name='miniLanguageViewpoint']/@ownedRepresentations[name='MiniLanguage']/@defaultLayer/@nodeMappings[name='ParameterNode']/@borderedNodeMappings[name='OutputNode']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/projetIDM.miniLanguage.design/description/miniLanguage.odesign#//@ownedViewpoints[name='miniLanguageViewpoint']/@ownedRepresentations[name='MiniLanguage']/@defaultLayer/@nodeMappings[name='ParameterNode']/@borderedNodeMappings[name='OutputNode']"/>
+      </ownedBorderedNodes>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:Square" uid="_2OHJALhoEe-8W5-j3nYCSQ" labelSize="12" labelPosition="node" width="15" height="5" color="194,239,255">
+        <description xmi:type="style:SquareDescription" href="platform:/resource/projetIDM.miniLanguage.design/description/miniLanguage.odesign#//@ownedViewpoints[name='miniLanguageViewpoint']/@ownedRepresentations[name='MiniLanguage']/@defaultLayer/@nodeMappings[name='ParameterNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/projetIDM.miniLanguage.design/description/miniLanguage.odesign#//@ownedViewpoints[name='miniLanguageViewpoint']/@ownedRepresentations[name='MiniLanguage']/@defaultLayer/@nodeMappings[name='ParameterNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_FCmNILl-Ee-c1fafAffaXw" name="Parameter" width="15" height="5">
+      <target xmi:type="miniLanguage:Parameter" href="My.xmi#//@miniLanguageElement.7"/>
+      <semanticElements xmi:type="miniLanguage:Parameter" href="My.xmi#//@miniLanguageElement.7"/>
+      <ownedBorderedNodes xmi:type="diagram:DNode" uid="_FCmNI7l-Ee-c1fafAffaXw" outgoingEdges="_GSRFVLl-Ee-c1fafAffaXw _I1J43Ll-Ee-c1fafAffaXw" width="2" height="2">
+        <target xmi:type="miniLanguage:Output" href="My.xmi#//@miniLanguageElement.7/@output"/>
+        <semanticElements xmi:type="miniLanguage:Output" href="My.xmi#//@miniLanguageElement.7/@output"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:Square" uid="_FCmNJLl-Ee-c1fafAffaXw" labelSize="12" labelColor="136,136,136" borderColor="136,136,136" labelPosition="node" width="2" height="2">
+          <description xmi:type="style:SquareDescription" href="platform:/resource/projetIDM.miniLanguage.design/description/miniLanguage.odesign#//@ownedViewpoints[name='miniLanguageViewpoint']/@ownedRepresentations[name='MiniLanguage']/@defaultLayer/@nodeMappings[name='ParameterNode']/@borderedNodeMappings[name='OutputNode']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/projetIDM.miniLanguage.design/description/miniLanguage.odesign#//@ownedViewpoints[name='miniLanguageViewpoint']/@ownedRepresentations[name='MiniLanguage']/@defaultLayer/@nodeMappings[name='ParameterNode']/@borderedNodeMappings[name='OutputNode']"/>
+      </ownedBorderedNodes>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:Square" uid="_FCmNIbl-Ee-c1fafAffaXw" labelSize="12" labelPosition="node" width="15" height="5" color="194,239,255">
+        <description xmi:type="style:SquareDescription" href="platform:/resource/projetIDM.miniLanguage.design/description/miniLanguage.odesign#//@ownedViewpoints[name='miniLanguageViewpoint']/@ownedRepresentations[name='MiniLanguage']/@defaultLayer/@nodeMappings[name='ParameterNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/projetIDM.miniLanguage.design/description/miniLanguage.odesign#//@ownedViewpoints[name='miniLanguageViewpoint']/@ownedRepresentations[name='MiniLanguage']/@defaultLayer/@nodeMappings[name='ParameterNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_2OI-NLhoEe-8W5-j3nYCSQ" name="EXPONENTIAL" width="20" height="8">
+      <target xmi:type="miniLanguage:OperationUnaire" href="My.xmi#//@miniLanguageElement.1"/>
+      <semanticElements xmi:type="miniLanguage:OperationUnaire" href="My.xmi#//@miniLanguageElement.1"/>
+      <ownedBorderedNodes xmi:type="diagram:DNode" uid="_Mbj3SbiYEe-Mvb3JCZGmEA" name="expo_i" incomingEdges="_wtYu8Ll6Ee-c1fafAffaXw" width="3" height="3">
+        <target xmi:type="miniLanguage:Input" href="My.xmi#//@miniLanguageElement.1/@input"/>
+        <semanticElements xmi:type="miniLanguage:Input" href="My.xmi#//@miniLanguageElement.1/@input"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:Square" uid="_Mbj3SriYEe-Mvb3JCZGmEA" labelSize="12" labelColor="136,136,136" borderColor="136,136,136" labelPosition="node">
+          <description xmi:type="style:SquareDescription" href="platform:/resource/projetIDM.miniLanguage.design/description/miniLanguage.odesign#//@ownedViewpoints[name='miniLanguageViewpoint']/@ownedRepresentations[name='MiniLanguage']/@defaultLayer/@nodeMappings[name='OperationUnaireNode']/@borderedNodeMappings[name='InputNode']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/projetIDM.miniLanguage.design/description/miniLanguage.odesign#//@ownedViewpoints[name='miniLanguageViewpoint']/@ownedRepresentations[name='MiniLanguage']/@defaultLayer/@nodeMappings[name='OperationUnaireNode']/@borderedNodeMappings[name='InputNode']"/>
+      </ownedBorderedNodes>
+      <ownedBorderedNodes xmi:type="diagram:DNode" uid="_MbkeULiYEe-Mvb3JCZGmEA" name="expo_o" outgoingEdges="_dda9SLl-Ee-c1fafAffaXw" width="3" height="3">
+        <target xmi:type="miniLanguage:Output" href="My.xmi#//@miniLanguageElement.1/@output"/>
+        <semanticElements xmi:type="miniLanguage:Output" href="My.xmi#//@miniLanguageElement.1/@output"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:Square" uid="_MbkeUbiYEe-Mvb3JCZGmEA" labelSize="12" labelColor="136,136,136" borderColor="136,136,136" labelPosition="node">
+          <description xmi:type="style:SquareDescription" href="platform:/resource/projetIDM.miniLanguage.design/description/miniLanguage.odesign#//@ownedViewpoints[name='miniLanguageViewpoint']/@ownedRepresentations[name='MiniLanguage']/@defaultLayer/@nodeMappings[name='OperationUnaireNode']/@borderedNodeMappings[name='OutputNode']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/projetIDM.miniLanguage.design/description/miniLanguage.odesign#//@ownedViewpoints[name='miniLanguageViewpoint']/@ownedRepresentations[name='MiniLanguage']/@defaultLayer/@nodeMappings[name='OperationUnaireNode']/@borderedNodeMappings[name='OutputNode']"/>
+      </ownedBorderedNodes>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:Square" uid="_7Wkk4biaEe-Mvb3JCZGmEA" labelSize="12" labelPosition="node" width="20" height="8" color="255,245,181">
+        <description xmi:type="style:SquareDescription" href="platform:/resource/projetIDM.miniLanguage.design/description/miniLanguage.odesign#//@ownedViewpoints[name='miniLanguageViewpoint']/@ownedRepresentations[name='MiniLanguage']/@defaultLayer/@nodeMappings[name='OperationUnaireNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/projetIDM.miniLanguage.design/description/miniLanguage.odesign#//@ownedViewpoints[name='miniLanguageViewpoint']/@ownedRepresentations[name='MiniLanguage']/@defaultLayer/@nodeMappings[name='OperationUnaireNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_DkyLULl-Ee-c1fafAffaXw" name="OPPOSITE" width="20" height="8">
+      <target xmi:type="miniLanguage:OperationUnaire" href="My.xmi#//@miniLanguageElement.5"/>
+      <semanticElements xmi:type="miniLanguage:OperationUnaire" href="My.xmi#//@miniLanguageElement.5"/>
+      <ownedBorderedNodes xmi:type="diagram:DNode" uid="_DkyyYbl-Ee-c1fafAffaXw" incomingEdges="_F5EiILl-Ee-c1fafAffaXw" width="3" height="3">
+        <target xmi:type="miniLanguage:Input" href="My.xmi#//@miniLanguageElement.5/@input"/>
+        <semanticElements xmi:type="miniLanguage:Input" href="My.xmi#//@miniLanguageElement.5/@input"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:Square" uid="_DkyyYrl-Ee-c1fafAffaXw" labelSize="12" labelColor="136,136,136" borderColor="136,136,136" labelPosition="node">
+          <description xmi:type="style:SquareDescription" href="platform:/resource/projetIDM.miniLanguage.design/description/miniLanguage.odesign#//@ownedViewpoints[name='miniLanguageViewpoint']/@ownedRepresentations[name='MiniLanguage']/@defaultLayer/@nodeMappings[name='OperationUnaireNode']/@borderedNodeMappings[name='InputNode']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/projetIDM.miniLanguage.design/description/miniLanguage.odesign#//@ownedViewpoints[name='miniLanguageViewpoint']/@ownedRepresentations[name='MiniLanguage']/@defaultLayer/@nodeMappings[name='OperationUnaireNode']/@borderedNodeMappings[name='InputNode']"/>
+      </ownedBorderedNodes>
+      <ownedBorderedNodes xmi:type="diagram:DNode" uid="_DkzZcLl-Ee-c1fafAffaXw" outgoingEdges="_GnP22Ll-Ee-c1fafAffaXw" width="3" height="3">
+        <target xmi:type="miniLanguage:Output" href="My.xmi#//@miniLanguageElement.5/@output"/>
+        <semanticElements xmi:type="miniLanguage:Output" href="My.xmi#//@miniLanguageElement.5/@output"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:Square" uid="_DkzZcbl-Ee-c1fafAffaXw" labelSize="12" labelColor="136,136,136" borderColor="136,136,136" labelPosition="node">
+          <description xmi:type="style:SquareDescription" href="platform:/resource/projetIDM.miniLanguage.design/description/miniLanguage.odesign#//@ownedViewpoints[name='miniLanguageViewpoint']/@ownedRepresentations[name='MiniLanguage']/@defaultLayer/@nodeMappings[name='OperationUnaireNode']/@borderedNodeMappings[name='OutputNode']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/projetIDM.miniLanguage.design/description/miniLanguage.odesign#//@ownedViewpoints[name='miniLanguageViewpoint']/@ownedRepresentations[name='MiniLanguage']/@defaultLayer/@nodeMappings[name='OperationUnaireNode']/@borderedNodeMappings[name='OutputNode']"/>
+      </ownedBorderedNodes>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:Square" uid="_DkyLUbl-Ee-c1fafAffaXw" labelSize="12" labelPosition="node" width="20" height="8" color="255,245,181">
+        <description xmi:type="style:SquareDescription" href="platform:/resource/projetIDM.miniLanguage.design/description/miniLanguage.odesign#//@ownedViewpoints[name='miniLanguageViewpoint']/@ownedRepresentations[name='MiniLanguage']/@defaultLayer/@nodeMappings[name='OperationUnaireNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/projetIDM.miniLanguage.design/description/miniLanguage.odesign#//@ownedViewpoints[name='miniLanguageViewpoint']/@ownedRepresentations[name='MiniLanguage']/@defaultLayer/@nodeMappings[name='OperationUnaireNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_2OJlQrhoEe-8W5-j3nYCSQ" name="SUM" width="20" height="8">
+      <target xmi:type="miniLanguage:OperationBinaire" href="My.xmi#//@miniLanguageElement.0"/>
+      <semanticElements xmi:type="miniLanguage:OperationBinaire" href="My.xmi#//@miniLanguageElement.0"/>
+      <ownedBorderedNodes xmi:type="diagram:DNode" uid="_x8ae8riXEe-Mvb3JCZGmEA" name="2" incomingEdges="_23ZgXLiZEe-Mvb3JCZGmEA" width="3" height="3">
+        <target xmi:type="miniLanguage:Input" href="My.xmi#//@miniLanguageElement.0/@input.0"/>
+        <semanticElements xmi:type="miniLanguage:Input" href="My.xmi#//@miniLanguageElement.0/@input.0"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:Square" uid="_x8ae87iXEe-Mvb3JCZGmEA" labelSize="12" labelColor="136,136,136" borderColor="136,136,136" labelPosition="node">
+          <description xmi:type="style:SquareDescription" href="platform:/resource/projetIDM.miniLanguage.design/description/miniLanguage.odesign#//@ownedViewpoints[name='miniLanguageViewpoint']/@ownedRepresentations[name='MiniLanguage']/@defaultLayer/@nodeMappings[name='OperationBinaireNode']/@borderedNodeMappings[name='InputNode']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/projetIDM.miniLanguage.design/description/miniLanguage.odesign#//@ownedViewpoints[name='miniLanguageViewpoint']/@ownedRepresentations[name='MiniLanguage']/@defaultLayer/@nodeMappings[name='OperationBinaireNode']/@borderedNodeMappings[name='InputNode']"/>
+      </ownedBorderedNodes>
+      <ownedBorderedNodes xmi:type="diagram:DNode" uid="_x8bGAbiXEe-Mvb3JCZGmEA" name="param_somme" incomingEdges="_L3sfzbiZEe-Mvb3JCZGmEA" width="3" height="3">
+        <target xmi:type="miniLanguage:Input" href="My.xmi#//@miniLanguageElement.0/@input.1"/>
+        <semanticElements xmi:type="miniLanguage:Input" href="My.xmi#//@miniLanguageElement.0/@input.1"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:Square" uid="_x8bGAriXEe-Mvb3JCZGmEA" labelSize="12" labelColor="136,136,136" borderColor="136,136,136" labelPosition="node">
+          <description xmi:type="style:SquareDescription" href="platform:/resource/projetIDM.miniLanguage.design/description/miniLanguage.odesign#//@ownedViewpoints[name='miniLanguageViewpoint']/@ownedRepresentations[name='MiniLanguage']/@defaultLayer/@nodeMappings[name='OperationBinaireNode']/@borderedNodeMappings[name='InputNode']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/projetIDM.miniLanguage.design/description/miniLanguage.odesign#//@ownedViewpoints[name='miniLanguageViewpoint']/@ownedRepresentations[name='MiniLanguage']/@defaultLayer/@nodeMappings[name='OperationBinaireNode']/@borderedNodeMappings[name='InputNode']"/>
+      </ownedBorderedNodes>
+      <ownedBorderedNodes xmi:type="diagram:DNode" uid="_A-6NyLiYEe-Mvb3JCZGmEA" name="Somme" outgoingEdges="_wtYu8Ll6Ee-c1fafAffaXw" width="3" height="3">
+        <target xmi:type="miniLanguage:Output" href="My.xmi#//@miniLanguageElement.0/@output"/>
+        <semanticElements xmi:type="miniLanguage:Output" href="My.xmi#//@miniLanguageElement.0/@output"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:Square" uid="_A-6NybiYEe-Mvb3JCZGmEA" labelSize="12" labelColor="136,136,136" borderColor="136,136,136" labelPosition="node">
+          <description xmi:type="style:SquareDescription" href="platform:/resource/projetIDM.miniLanguage.design/description/miniLanguage.odesign#//@ownedViewpoints[name='miniLanguageViewpoint']/@ownedRepresentations[name='MiniLanguage']/@defaultLayer/@nodeMappings[name='OperationBinaireNode']/@borderedNodeMappings[name='OutputNode']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/projetIDM.miniLanguage.design/description/miniLanguage.odesign#//@ownedViewpoints[name='miniLanguageViewpoint']/@ownedRepresentations[name='MiniLanguage']/@defaultLayer/@nodeMappings[name='OperationBinaireNode']/@borderedNodeMappings[name='OutputNode']"/>
+      </ownedBorderedNodes>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:Square" uid="_7WmaELiaEe-Mvb3JCZGmEA" labelSize="12" labelPosition="node" width="20" height="8" color="253,206,137">
+        <description xmi:type="style:SquareDescription" href="platform:/resource/projetIDM.miniLanguage.design/description/miniLanguage.odesign#//@ownedViewpoints[name='miniLanguageViewpoint']/@ownedRepresentations[name='MiniLanguage']/@defaultLayer/@nodeMappings[name='OperationBinaireNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/projetIDM.miniLanguage.design/description/miniLanguage.odesign#//@ownedViewpoints[name='miniLanguageViewpoint']/@ownedRepresentations[name='MiniLanguage']/@defaultLayer/@nodeMappings[name='OperationBinaireNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_EtuJULl-Ee-c1fafAffaXw" name="MAXIMUM" width="20" height="8">
+      <target xmi:type="miniLanguage:OperationBinaire" href="My.xmi#//@miniLanguageElement.6"/>
+      <semanticElements xmi:type="miniLanguage:OperationBinaire" href="My.xmi#//@miniLanguageElement.6"/>
+      <ownedBorderedNodes xmi:type="diagram:DNode" uid="_Etv-gbl-Ee-c1fafAffaXw" incomingEdges="_GSRFVLl-Ee-c1fafAffaXw" width="3" height="3">
+        <target xmi:type="miniLanguage:Input" href="My.xmi#//@miniLanguageElement.6/@input.0"/>
+        <semanticElements xmi:type="miniLanguage:Input" href="My.xmi#//@miniLanguageElement.6/@input.0"/>
+        <ownedStyle xmi:type="diagram:Square" uid="_Etv-grl-Ee-c1fafAffaXw" labelSize="12" labelColor="136,136,136" borderColor="136,136,136" labelPosition="node">
+          <description xmi:type="style:SquareDescription" href="platform:/resource/projetIDM.miniLanguage.design/description/miniLanguage.odesign#//@ownedViewpoints[name='miniLanguageViewpoint']/@ownedRepresentations[name='MiniLanguage']/@defaultLayer/@nodeMappings[name='OperationBinaireNode']/@borderedNodeMappings[name='InputNode']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/projetIDM.miniLanguage.design/description/miniLanguage.odesign#//@ownedViewpoints[name='miniLanguageViewpoint']/@ownedRepresentations[name='MiniLanguage']/@defaultLayer/@nodeMappings[name='OperationBinaireNode']/@borderedNodeMappings[name='InputNode']"/>
+      </ownedBorderedNodes>
+      <ownedBorderedNodes xmi:type="diagram:DNode" uid="_EtwlkLl-Ee-c1fafAffaXw" incomingEdges="_GnP22Ll-Ee-c1fafAffaXw" width="3" height="3">
+        <target xmi:type="miniLanguage:Input" href="My.xmi#//@miniLanguageElement.6/@input.1"/>
+        <semanticElements xmi:type="miniLanguage:Input" href="My.xmi#//@miniLanguageElement.6/@input.1"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:Square" uid="_Etwlkbl-Ee-c1fafAffaXw" labelSize="12" labelColor="136,136,136" borderColor="136,136,136" labelPosition="node">
+          <description xmi:type="style:SquareDescription" href="platform:/resource/projetIDM.miniLanguage.design/description/miniLanguage.odesign#//@ownedViewpoints[name='miniLanguageViewpoint']/@ownedRepresentations[name='MiniLanguage']/@defaultLayer/@nodeMappings[name='OperationBinaireNode']/@borderedNodeMappings[name='InputNode']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/projetIDM.miniLanguage.design/description/miniLanguage.odesign#//@ownedViewpoints[name='miniLanguageViewpoint']/@ownedRepresentations[name='MiniLanguage']/@defaultLayer/@nodeMappings[name='OperationBinaireNode']/@borderedNodeMappings[name='InputNode']"/>
+      </ownedBorderedNodes>
+      <ownedBorderedNodes xmi:type="diagram:DNode" uid="_Etwlkrl-Ee-c1fafAffaXw" outgoingEdges="_J8Qq1Ll-Ee-c1fafAffaXw" width="3" height="3">
+        <target xmi:type="miniLanguage:Output" href="My.xmi#//@miniLanguageElement.6/@output"/>
+        <semanticElements xmi:type="miniLanguage:Output" href="My.xmi#//@miniLanguageElement.6/@output"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:Square" uid="_Etwlk7l-Ee-c1fafAffaXw" labelSize="12" labelColor="136,136,136" borderColor="136,136,136" labelPosition="node">
+          <description xmi:type="style:SquareDescription" href="platform:/resource/projetIDM.miniLanguage.design/description/miniLanguage.odesign#//@ownedViewpoints[name='miniLanguageViewpoint']/@ownedRepresentations[name='MiniLanguage']/@defaultLayer/@nodeMappings[name='OperationBinaireNode']/@borderedNodeMappings[name='OutputNode']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/projetIDM.miniLanguage.design/description/miniLanguage.odesign#//@ownedViewpoints[name='miniLanguageViewpoint']/@ownedRepresentations[name='MiniLanguage']/@defaultLayer/@nodeMappings[name='OperationBinaireNode']/@borderedNodeMappings[name='OutputNode']"/>
+      </ownedBorderedNodes>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:Square" uid="_EtuwYLl-Ee-c1fafAffaXw" labelSize="12" labelPosition="node" width="20" height="8" color="253,206,137">
+        <description xmi:type="style:SquareDescription" href="platform:/resource/projetIDM.miniLanguage.design/description/miniLanguage.odesign#//@ownedViewpoints[name='miniLanguageViewpoint']/@ownedRepresentations[name='MiniLanguage']/@defaultLayer/@nodeMappings[name='OperationBinaireNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/projetIDM.miniLanguage.design/description/miniLanguage.odesign#//@ownedViewpoints[name='miniLanguageViewpoint']/@ownedRepresentations[name='MiniLanguage']/@defaultLayer/@nodeMappings[name='OperationBinaireNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_H_yXALl-Ee-c1fafAffaXw" name="PRODUCT" width="20" height="8">
+      <target xmi:type="miniLanguage:OperationBinaire" href="My.xmi#//@miniLanguageElement.8"/>
+      <semanticElements xmi:type="miniLanguage:OperationBinaire" href="My.xmi#//@miniLanguageElement.8"/>
+      <ownedBorderedNodes xmi:type="diagram:DNode" uid="_H_yXA7l-Ee-c1fafAffaXw" incomingEdges="_I1J43Ll-Ee-c1fafAffaXw" width="3" height="3">
+        <target xmi:type="miniLanguage:Input" href="My.xmi#//@miniLanguageElement.8/@input.0"/>
+        <semanticElements xmi:type="miniLanguage:Input" href="My.xmi#//@miniLanguageElement.8/@input.0"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:Square" uid="_H_yXBLl-Ee-c1fafAffaXw" labelSize="12" labelColor="136,136,136" borderColor="136,136,136" labelPosition="node">
+          <description xmi:type="style:SquareDescription" href="platform:/resource/projetIDM.miniLanguage.design/description/miniLanguage.odesign#//@ownedViewpoints[name='miniLanguageViewpoint']/@ownedRepresentations[name='MiniLanguage']/@defaultLayer/@nodeMappings[name='OperationBinaireNode']/@borderedNodeMappings[name='InputNode']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/projetIDM.miniLanguage.design/description/miniLanguage.odesign#//@ownedViewpoints[name='miniLanguageViewpoint']/@ownedRepresentations[name='MiniLanguage']/@defaultLayer/@nodeMappings[name='OperationBinaireNode']/@borderedNodeMappings[name='InputNode']"/>
+      </ownedBorderedNodes>
+      <ownedBorderedNodes xmi:type="diagram:DNode" uid="_H_y-ELl-Ee-c1fafAffaXw" incomingEdges="_J8Qq1Ll-Ee-c1fafAffaXw" width="3" height="3">
+        <target xmi:type="miniLanguage:Input" href="My.xmi#//@miniLanguageElement.8/@input.1"/>
+        <semanticElements xmi:type="miniLanguage:Input" href="My.xmi#//@miniLanguageElement.8/@input.1"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:Square" uid="_H_y-Ebl-Ee-c1fafAffaXw" labelSize="12" labelColor="136,136,136" borderColor="136,136,136" labelPosition="node">
+          <description xmi:type="style:SquareDescription" href="platform:/resource/projetIDM.miniLanguage.design/description/miniLanguage.odesign#//@ownedViewpoints[name='miniLanguageViewpoint']/@ownedRepresentations[name='MiniLanguage']/@defaultLayer/@nodeMappings[name='OperationBinaireNode']/@borderedNodeMappings[name='InputNode']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/projetIDM.miniLanguage.design/description/miniLanguage.odesign#//@ownedViewpoints[name='miniLanguageViewpoint']/@ownedRepresentations[name='MiniLanguage']/@defaultLayer/@nodeMappings[name='OperationBinaireNode']/@borderedNodeMappings[name='InputNode']"/>
+      </ownedBorderedNodes>
+      <ownedBorderedNodes xmi:type="diagram:DNode" uid="_H_y-Erl-Ee-c1fafAffaXw" outgoingEdges="_dum0BLl-Ee-c1fafAffaXw" width="3" height="3">
+        <target xmi:type="miniLanguage:Output" href="My.xmi#//@miniLanguageElement.8/@output"/>
+        <semanticElements xmi:type="miniLanguage:Output" href="My.xmi#//@miniLanguageElement.8/@output"/>
+        <ownedStyle xmi:type="diagram:Square" uid="_H_y-E7l-Ee-c1fafAffaXw" labelSize="12" labelColor="136,136,136" borderColor="136,136,136" labelPosition="node">
+          <description xmi:type="style:SquareDescription" href="platform:/resource/projetIDM.miniLanguage.design/description/miniLanguage.odesign#//@ownedViewpoints[name='miniLanguageViewpoint']/@ownedRepresentations[name='MiniLanguage']/@defaultLayer/@nodeMappings[name='OperationBinaireNode']/@borderedNodeMappings[name='OutputNode']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/projetIDM.miniLanguage.design/description/miniLanguage.odesign#//@ownedViewpoints[name='miniLanguageViewpoint']/@ownedRepresentations[name='MiniLanguage']/@defaultLayer/@nodeMappings[name='OperationBinaireNode']/@borderedNodeMappings[name='OutputNode']"/>
+      </ownedBorderedNodes>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:Square" uid="_H_yXAbl-Ee-c1fafAffaXw" labelSize="12" labelPosition="node" width="20" height="8" color="253,206,137">
+        <description xmi:type="style:SquareDescription" href="platform:/resource/projetIDM.miniLanguage.design/description/miniLanguage.odesign#//@ownedViewpoints[name='miniLanguageViewpoint']/@ownedRepresentations[name='MiniLanguage']/@defaultLayer/@nodeMappings[name='OperationBinaireNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/projetIDM.miniLanguage.design/description/miniLanguage.odesign#//@ownedViewpoints[name='miniLanguageViewpoint']/@ownedRepresentations[name='MiniLanguage']/@defaultLayer/@nodeMappings[name='OperationBinaireNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_cU8SQLl-Ee-c1fafAffaXw" name="MINIMUM" width="20" height="8">
+      <target xmi:type="miniLanguage:OperationBinaire" href="My.xmi#//@miniLanguageElement.10"/>
+      <semanticElements xmi:type="miniLanguage:OperationBinaire" href="My.xmi#//@miniLanguageElement.10"/>
+      <ownedBorderedNodes xmi:type="diagram:DNode" uid="_cU85Ubl-Ee-c1fafAffaXw" incomingEdges="_dum0BLl-Ee-c1fafAffaXw" width="3" height="3">
+        <target xmi:type="miniLanguage:Input" href="My.xmi#//@miniLanguageElement.10/@input.0"/>
+        <semanticElements xmi:type="miniLanguage:Input" href="My.xmi#//@miniLanguageElement.10/@input.0"/>
+        <ownedStyle xmi:type="diagram:Square" uid="_cU9gYLl-Ee-c1fafAffaXw" labelSize="12" labelColor="136,136,136" borderColor="136,136,136" labelPosition="node">
+          <description xmi:type="style:SquareDescription" href="platform:/resource/projetIDM.miniLanguage.design/description/miniLanguage.odesign#//@ownedViewpoints[name='miniLanguageViewpoint']/@ownedRepresentations[name='MiniLanguage']/@defaultLayer/@nodeMappings[name='OperationBinaireNode']/@borderedNodeMappings[name='InputNode']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/projetIDM.miniLanguage.design/description/miniLanguage.odesign#//@ownedViewpoints[name='miniLanguageViewpoint']/@ownedRepresentations[name='MiniLanguage']/@defaultLayer/@nodeMappings[name='OperationBinaireNode']/@borderedNodeMappings[name='InputNode']"/>
+      </ownedBorderedNodes>
+      <ownedBorderedNodes xmi:type="diagram:DNode" uid="_cU9gYbl-Ee-c1fafAffaXw" incomingEdges="_dda9SLl-Ee-c1fafAffaXw" width="3" height="3">
+        <target xmi:type="miniLanguage:Input" href="My.xmi#//@miniLanguageElement.10/@input.1"/>
+        <semanticElements xmi:type="miniLanguage:Input" href="My.xmi#//@miniLanguageElement.10/@input.1"/>
+        <ownedStyle xmi:type="diagram:Square" uid="_cU9gYrl-Ee-c1fafAffaXw" labelSize="12" labelColor="136,136,136" borderColor="136,136,136" labelPosition="node">
+          <description xmi:type="style:SquareDescription" href="platform:/resource/projetIDM.miniLanguage.design/description/miniLanguage.odesign#//@ownedViewpoints[name='miniLanguageViewpoint']/@ownedRepresentations[name='MiniLanguage']/@defaultLayer/@nodeMappings[name='OperationBinaireNode']/@borderedNodeMappings[name='InputNode']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/projetIDM.miniLanguage.design/description/miniLanguage.odesign#//@ownedViewpoints[name='miniLanguageViewpoint']/@ownedRepresentations[name='MiniLanguage']/@defaultLayer/@nodeMappings[name='OperationBinaireNode']/@borderedNodeMappings[name='InputNode']"/>
+      </ownedBorderedNodes>
+      <ownedBorderedNodes xmi:type="diagram:DNode" uid="_cU9gY7l-Ee-c1fafAffaXw" outgoingEdges="_e6gmdLl-Ee-c1fafAffaXw" width="3" height="3">
+        <target xmi:type="miniLanguage:Output" href="My.xmi#//@miniLanguageElement.10/@output"/>
+        <semanticElements xmi:type="miniLanguage:Output" href="My.xmi#//@miniLanguageElement.10/@output"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:Square" uid="_cU-HcLl-Ee-c1fafAffaXw" labelSize="12" labelColor="136,136,136" borderColor="136,136,136" labelPosition="node">
+          <description xmi:type="style:SquareDescription" href="platform:/resource/projetIDM.miniLanguage.design/description/miniLanguage.odesign#//@ownedViewpoints[name='miniLanguageViewpoint']/@ownedRepresentations[name='MiniLanguage']/@defaultLayer/@nodeMappings[name='OperationBinaireNode']/@borderedNodeMappings[name='OutputNode']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/projetIDM.miniLanguage.design/description/miniLanguage.odesign#//@ownedViewpoints[name='miniLanguageViewpoint']/@ownedRepresentations[name='MiniLanguage']/@defaultLayer/@nodeMappings[name='OperationBinaireNode']/@borderedNodeMappings[name='OutputNode']"/>
+      </ownedBorderedNodes>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:Square" uid="_cU8SQbl-Ee-c1fafAffaXw" labelSize="12" labelPosition="node" width="20" height="8" color="253,206,137">
+        <description xmi:type="style:SquareDescription" href="platform:/resource/projetIDM.miniLanguage.design/description/miniLanguage.odesign#//@ownedViewpoints[name='miniLanguageViewpoint']/@ownedRepresentations[name='MiniLanguage']/@defaultLayer/@nodeMappings[name='OperationBinaireNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/projetIDM.miniLanguage.design/description/miniLanguage.odesign#//@ownedViewpoints[name='miniLanguageViewpoint']/@ownedRepresentations[name='MiniLanguage']/@defaultLayer/@nodeMappings[name='OperationBinaireNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_L3sfzbiZEe-Mvb3JCZGmEA" sourceNode="_vvxy0LiYEe-Mvb3JCZGmEA" targetNode="_x8bGAbiXEe-Mvb3JCZGmEA">
+      <target xmi:type="miniLanguage:Output" href="My.xmi#//@miniLanguageElement.2/@output"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_L3sfzriZEe-Mvb3JCZGmEA" targetArrow="NoDecoration" foldingStyle="SOURCE" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/projetIDM.miniLanguage.design/description/miniLanguage.odesign#//@ownedViewpoints[name='miniLanguageViewpoint']/@ownedRepresentations[name='MiniLanguage']/@defaultLayer/@edgeMappings[name='OutputToInputEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_L3sfz7iZEe-Mvb3JCZGmEA" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/projetIDM.miniLanguage.design/description/miniLanguage.odesign#//@ownedViewpoints[name='miniLanguageViewpoint']/@ownedRepresentations[name='MiniLanguage']/@defaultLayer/@edgeMappings[name='OutputToInputEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_pW3TjbiZEe-Mvb3JCZGmEA" name="2" width="5" height="5">
+      <target xmi:type="miniLanguage:IntegerConstant" href="My.xmi#//@miniLanguageElement.3"/>
+      <semanticElements xmi:type="miniLanguage:IntegerConstant" href="My.xmi#//@miniLanguageElement.3"/>
+      <ownedBorderedNodes xmi:type="diagram:DNode" uid="_pW5IsbiZEe-Mvb3JCZGmEA" name="2" outgoingEdges="_23ZgXLiZEe-Mvb3JCZGmEA" width="2" height="2">
+        <target xmi:type="miniLanguage:Output" href="My.xmi#//@miniLanguageElement.3/@output"/>
+        <semanticElements xmi:type="miniLanguage:Output" href="My.xmi#//@miniLanguageElement.3/@output"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:Square" uid="_pW5IsriZEe-Mvb3JCZGmEA" labelSize="12" showIcon="false" labelColor="136,136,136" borderColor="136,136,136" labelPosition="node" width="2" height="2">
+          <labelFormat>strike_through</labelFormat>
+          <description xmi:type="style:SquareDescription" href="platform:/resource/projetIDM.miniLanguage.design/description/miniLanguage.odesign#//@ownedViewpoints[name='miniLanguageViewpoint']/@ownedRepresentations[name='MiniLanguage']/@defaultLayer/@nodeMappings[name='IntegerConstant']/@borderedNodeMappings[name='OutputNode']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/projetIDM.miniLanguage.design/description/miniLanguage.odesign#//@ownedViewpoints[name='miniLanguageViewpoint']/@ownedRepresentations[name='MiniLanguage']/@defaultLayer/@nodeMappings[name='IntegerConstant']/@borderedNodeMappings[name='OutputNode']"/>
+      </ownedBorderedNodes>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:Square" uid="_HQcLXbiaEe-Mvb3JCZGmEA" labelSize="12" labelPosition="node" width="5" height="5" color="204,242,166">
+        <description xmi:type="style:SquareDescription" href="platform:/resource/projetIDM.miniLanguage.design/description/miniLanguage.odesign#//@ownedViewpoints[name='miniLanguageViewpoint']/@ownedRepresentations[name='MiniLanguage']/@defaultLayer/@nodeMappings[name='IntegerConstant']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/projetIDM.miniLanguage.design/description/miniLanguage.odesign#//@ownedViewpoints[name='miniLanguageViewpoint']/@ownedRepresentations[name='MiniLanguage']/@defaultLayer/@nodeMappings[name='IntegerConstant']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_23ZgXLiZEe-Mvb3JCZGmEA" sourceNode="_pW5IsbiZEe-Mvb3JCZGmEA" targetNode="_x8ae8riXEe-Mvb3JCZGmEA">
+      <target xmi:type="miniLanguage:Output" href="My.xmi#//@miniLanguageElement.3/@output"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_23b8kLiZEe-Mvb3JCZGmEA" targetArrow="NoDecoration" foldingStyle="SOURCE" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/projetIDM.miniLanguage.design/description/miniLanguage.odesign#//@ownedViewpoints[name='miniLanguageViewpoint']/@ownedRepresentations[name='MiniLanguage']/@defaultLayer/@edgeMappings[name='OutputToInputEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_23b8kbiZEe-Mvb3JCZGmEA" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/projetIDM.miniLanguage.design/description/miniLanguage.odesign#//@ownedViewpoints[name='miniLanguageViewpoint']/@ownedRepresentations[name='MiniLanguage']/@defaultLayer/@edgeMappings[name='OutputToInputEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_MfL6gLl-Ee-c1fafAffaXw" name="Return" width="13" height="5">
+      <target xmi:type="miniLanguage:Return" href="My.xmi#//@miniLanguageElement.9"/>
+      <semanticElements xmi:type="miniLanguage:Return" href="My.xmi#//@miniLanguageElement.9"/>
+      <ownedBorderedNodes xmi:type="diagram:DNode" uid="_MfL6g7l-Ee-c1fafAffaXw" incomingEdges="_e6gmdLl-Ee-c1fafAffaXw" width="2" height="2">
+        <target xmi:type="miniLanguage:Input" href="My.xmi#//@miniLanguageElement.9/@input"/>
+        <semanticElements xmi:type="miniLanguage:Input" href="My.xmi#//@miniLanguageElement.9/@input"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:Square" uid="_MfL6hLl-Ee-c1fafAffaXw" labelSize="12" labelColor="136,136,136" borderColor="136,136,136" labelPosition="node" width="2" height="2">
+          <description xmi:type="style:SquareDescription" href="platform:/resource/projetIDM.miniLanguage.design/description/miniLanguage.odesign#//@ownedViewpoints[name='miniLanguageViewpoint']/@ownedRepresentations[name='MiniLanguage']/@defaultLayer/@nodeMappings[name='ReturnNode']/@borderedNodeMappings[name='InputNode']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/projetIDM.miniLanguage.design/description/miniLanguage.odesign#//@ownedViewpoints[name='miniLanguageViewpoint']/@ownedRepresentations[name='MiniLanguage']/@defaultLayer/@nodeMappings[name='ReturnNode']/@borderedNodeMappings[name='InputNode']"/>
+      </ownedBorderedNodes>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:Square" uid="_MfL6gbl-Ee-c1fafAffaXw" labelSize="12" labelPosition="node" width="13" height="5" color="246,139,139">
+        <description xmi:type="style:SquareDescription" href="platform:/resource/projetIDM.miniLanguage.design/description/miniLanguage.odesign#//@ownedViewpoints[name='miniLanguageViewpoint']/@ownedRepresentations[name='MiniLanguage']/@defaultLayer/@nodeMappings[name='ReturnNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/projetIDM.miniLanguage.design/description/miniLanguage.odesign#//@ownedViewpoints[name='miniLanguageViewpoint']/@ownedRepresentations[name='MiniLanguage']/@defaultLayer/@nodeMappings[name='ReturnNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_wtYu8Ll6Ee-c1fafAffaXw" sourceNode="_A-6NyLiYEe-Mvb3JCZGmEA" targetNode="_Mbj3SbiYEe-Mvb3JCZGmEA">
+      <target xmi:type="miniLanguage:Output" href="My.xmi#//@miniLanguageElement.0/@output"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_wtYu8bl6Ee-c1fafAffaXw" targetArrow="NoDecoration" foldingStyle="SOURCE" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/projetIDM.miniLanguage.design/description/miniLanguage.odesign#//@ownedViewpoints[name='miniLanguageViewpoint']/@ownedRepresentations[name='MiniLanguage']/@defaultLayer/@edgeMappings[name='OutputToInputEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_wtYu8rl6Ee-c1fafAffaXw" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/projetIDM.miniLanguage.design/description/miniLanguage.odesign#//@ownedViewpoints[name='miniLanguageViewpoint']/@ownedRepresentations[name='MiniLanguage']/@defaultLayer/@edgeMappings[name='OutputToInputEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_C7PfELl-Ee-c1fafAffaXw" name="6.21" width="5" height="5">
+      <target xmi:type="miniLanguage:FloatConstant" href="My.xmi#//@miniLanguageElement.4"/>
+      <semanticElements xmi:type="miniLanguage:FloatConstant" href="My.xmi#//@miniLanguageElement.4"/>
+      <ownedBorderedNodes xmi:type="diagram:DNode" uid="_C7QGIbl-Ee-c1fafAffaXw" outgoingEdges="_F5EiILl-Ee-c1fafAffaXw" width="2" height="2">
+        <target xmi:type="miniLanguage:Output" href="My.xmi#//@miniLanguageElement.4/@output"/>
+        <semanticElements xmi:type="miniLanguage:Output" href="My.xmi#//@miniLanguageElement.4/@output"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:Square" uid="_C7QGIrl-Ee-c1fafAffaXw" labelSize="12" labelColor="136,136,136" borderColor="136,136,136" labelPosition="node" width="2" height="2">
+          <description xmi:type="style:SquareDescription" href="platform:/resource/projetIDM.miniLanguage.design/description/miniLanguage.odesign#//@ownedViewpoints[name='miniLanguageViewpoint']/@ownedRepresentations[name='MiniLanguage']/@defaultLayer/@nodeMappings[name='FloatConstant']/@borderedNodeMappings[name='OutputNode']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/projetIDM.miniLanguage.design/description/miniLanguage.odesign#//@ownedViewpoints[name='miniLanguageViewpoint']/@ownedRepresentations[name='MiniLanguage']/@defaultLayer/@nodeMappings[name='FloatConstant']/@borderedNodeMappings[name='OutputNode']"/>
+      </ownedBorderedNodes>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:Square" uid="_C7PfEbl-Ee-c1fafAffaXw" labelSize="12" labelPosition="node" width="5" height="5" color="204,242,166">
+        <description xmi:type="style:SquareDescription" href="platform:/resource/projetIDM.miniLanguage.design/description/miniLanguage.odesign#//@ownedViewpoints[name='miniLanguageViewpoint']/@ownedRepresentations[name='MiniLanguage']/@defaultLayer/@nodeMappings[name='FloatConstant']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/projetIDM.miniLanguage.design/description/miniLanguage.odesign#//@ownedViewpoints[name='miniLanguageViewpoint']/@ownedRepresentations[name='MiniLanguage']/@defaultLayer/@nodeMappings[name='FloatConstant']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_F5EiILl-Ee-c1fafAffaXw" sourceNode="_C7QGIbl-Ee-c1fafAffaXw" targetNode="_DkyyYbl-Ee-c1fafAffaXw">
+      <target xmi:type="miniLanguage:Output" href="My.xmi#//@miniLanguageElement.4/@output"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_F5EiIbl-Ee-c1fafAffaXw" targetArrow="NoDecoration" foldingStyle="SOURCE" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/projetIDM.miniLanguage.design/description/miniLanguage.odesign#//@ownedViewpoints[name='miniLanguageViewpoint']/@ownedRepresentations[name='MiniLanguage']/@defaultLayer/@edgeMappings[name='OutputToInputEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_F5EiIrl-Ee-c1fafAffaXw" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/projetIDM.miniLanguage.design/description/miniLanguage.odesign#//@ownedViewpoints[name='miniLanguageViewpoint']/@ownedRepresentations[name='MiniLanguage']/@defaultLayer/@edgeMappings[name='OutputToInputEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_GSRFVLl-Ee-c1fafAffaXw" sourceNode="_FCmNI7l-Ee-c1fafAffaXw" targetNode="_Etv-gbl-Ee-c1fafAffaXw">
+      <target xmi:type="miniLanguage:Output" href="My.xmi#//@miniLanguageElement.7/@output"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_GSRFVbl-Ee-c1fafAffaXw" targetArrow="NoDecoration" foldingStyle="SOURCE" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/projetIDM.miniLanguage.design/description/miniLanguage.odesign#//@ownedViewpoints[name='miniLanguageViewpoint']/@ownedRepresentations[name='MiniLanguage']/@defaultLayer/@edgeMappings[name='OutputToInputEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_GSRFVrl-Ee-c1fafAffaXw" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/projetIDM.miniLanguage.design/description/miniLanguage.odesign#//@ownedViewpoints[name='miniLanguageViewpoint']/@ownedRepresentations[name='MiniLanguage']/@defaultLayer/@edgeMappings[name='OutputToInputEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_GnP22Ll-Ee-c1fafAffaXw" sourceNode="_DkzZcLl-Ee-c1fafAffaXw" targetNode="_EtwlkLl-Ee-c1fafAffaXw">
+      <target xmi:type="miniLanguage:Output" href="My.xmi#//@miniLanguageElement.5/@output"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_GnQd0Ll-Ee-c1fafAffaXw" targetArrow="NoDecoration" foldingStyle="SOURCE" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/projetIDM.miniLanguage.design/description/miniLanguage.odesign#//@ownedViewpoints[name='miniLanguageViewpoint']/@ownedRepresentations[name='MiniLanguage']/@defaultLayer/@edgeMappings[name='OutputToInputEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_GnQd0bl-Ee-c1fafAffaXw" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/projetIDM.miniLanguage.design/description/miniLanguage.odesign#//@ownedViewpoints[name='miniLanguageViewpoint']/@ownedRepresentations[name='MiniLanguage']/@defaultLayer/@edgeMappings[name='OutputToInputEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_I1J43Ll-Ee-c1fafAffaXw" sourceNode="_FCmNI7l-Ee-c1fafAffaXw" targetNode="_H_yXA7l-Ee-c1fafAffaXw">
+      <target xmi:type="miniLanguage:Output" href="My.xmi#//@miniLanguageElement.7/@output"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_I1J43bl-Ee-c1fafAffaXw" targetArrow="NoDecoration" foldingStyle="SOURCE" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/projetIDM.miniLanguage.design/description/miniLanguage.odesign#//@ownedViewpoints[name='miniLanguageViewpoint']/@ownedRepresentations[name='MiniLanguage']/@defaultLayer/@edgeMappings[name='OutputToInputEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_I1J43rl-Ee-c1fafAffaXw" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/projetIDM.miniLanguage.design/description/miniLanguage.odesign#//@ownedViewpoints[name='miniLanguageViewpoint']/@ownedRepresentations[name='MiniLanguage']/@defaultLayer/@edgeMappings[name='OutputToInputEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_J8Qq1Ll-Ee-c1fafAffaXw" sourceNode="_Etwlkrl-Ee-c1fafAffaXw" targetNode="_H_y-ELl-Ee-c1fafAffaXw">
+      <target xmi:type="miniLanguage:Output" href="My.xmi#//@miniLanguageElement.6/@output"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_J8Qq1bl-Ee-c1fafAffaXw" targetArrow="NoDecoration" foldingStyle="SOURCE" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/projetIDM.miniLanguage.design/description/miniLanguage.odesign#//@ownedViewpoints[name='miniLanguageViewpoint']/@ownedRepresentations[name='MiniLanguage']/@defaultLayer/@edgeMappings[name='OutputToInputEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_J8Qq1rl-Ee-c1fafAffaXw" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/projetIDM.miniLanguage.design/description/miniLanguage.odesign#//@ownedViewpoints[name='miniLanguageViewpoint']/@ownedRepresentations[name='MiniLanguage']/@defaultLayer/@edgeMappings[name='OutputToInputEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_dda9SLl-Ee-c1fafAffaXw" sourceNode="_MbkeULiYEe-Mvb3JCZGmEA" targetNode="_cU9gYbl-Ee-c1fafAffaXw">
+      <target xmi:type="miniLanguage:Output" href="My.xmi#//@miniLanguageElement.1/@output"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_dda9Sbl-Ee-c1fafAffaXw" targetArrow="NoDecoration" foldingStyle="SOURCE" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/projetIDM.miniLanguage.design/description/miniLanguage.odesign#//@ownedViewpoints[name='miniLanguageViewpoint']/@ownedRepresentations[name='MiniLanguage']/@defaultLayer/@edgeMappings[name='OutputToInputEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_dda9Srl-Ee-c1fafAffaXw" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/projetIDM.miniLanguage.design/description/miniLanguage.odesign#//@ownedViewpoints[name='miniLanguageViewpoint']/@ownedRepresentations[name='MiniLanguage']/@defaultLayer/@edgeMappings[name='OutputToInputEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_dum0BLl-Ee-c1fafAffaXw" sourceNode="_H_y-Erl-Ee-c1fafAffaXw" targetNode="_cU85Ubl-Ee-c1fafAffaXw">
+      <target xmi:type="miniLanguage:Output" href="My.xmi#//@miniLanguageElement.8/@output"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_dum0Bbl-Ee-c1fafAffaXw" targetArrow="NoDecoration" foldingStyle="SOURCE" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/projetIDM.miniLanguage.design/description/miniLanguage.odesign#//@ownedViewpoints[name='miniLanguageViewpoint']/@ownedRepresentations[name='MiniLanguage']/@defaultLayer/@edgeMappings[name='OutputToInputEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_dum0Brl-Ee-c1fafAffaXw" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/projetIDM.miniLanguage.design/description/miniLanguage.odesign#//@ownedViewpoints[name='miniLanguageViewpoint']/@ownedRepresentations[name='MiniLanguage']/@defaultLayer/@edgeMappings[name='OutputToInputEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_e6gmdLl-Ee-c1fafAffaXw" sourceNode="_cU9gY7l-Ee-c1fafAffaXw" targetNode="_MfL6g7l-Ee-c1fafAffaXw">
+      <target xmi:type="miniLanguage:Output" href="My.xmi#//@miniLanguageElement.10/@output"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_e6hNYLl-Ee-c1fafAffaXw" targetArrow="NoDecoration" foldingStyle="SOURCE" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/projetIDM.miniLanguage.design/description/miniLanguage.odesign#//@ownedViewpoints[name='miniLanguageViewpoint']/@ownedRepresentations[name='MiniLanguage']/@defaultLayer/@edgeMappings[name='OutputToInputEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_e6hNYbl-Ee-c1fafAffaXw" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/projetIDM.miniLanguage.design/description/miniLanguage.odesign#//@ownedViewpoints[name='miniLanguageViewpoint']/@ownedRepresentations[name='MiniLanguage']/@defaultLayer/@edgeMappings[name='OutputToInputEdge']"/>
+    </ownedDiagramElements>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/resource/projetIDM.miniLanguage.design/description/miniLanguage.odesign#//@ownedViewpoints[name='miniLanguageViewpoint']/@ownedRepresentations[name='MiniLanguage']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_2ODeobhoEe-8W5-j3nYCSQ"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/resource/projetIDM.miniLanguage.design/description/miniLanguage.odesign#//@ownedViewpoints[name='miniLanguageViewpoint']/@ownedRepresentations[name='MiniLanguage']/@defaultLayer"/>
+    <target xmi:type="miniLanguage:MiniLanguage" href="My.xmi#/"/>
+  </diagram:DSemanticDiagram>
+</xmi:XMI>

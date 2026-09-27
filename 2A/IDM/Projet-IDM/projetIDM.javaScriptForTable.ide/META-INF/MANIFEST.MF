@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: projetIDM.javaScriptForTable.ide
+Bundle-ManifestVersion: 2
+Bundle-Name: projetIDM.javaScriptForTable.ide
+Bundle-Vendor: My Company
+Bundle-Version: 1.0.0.qualifier
+Bundle-SymbolicName: projetIDM.javaScriptForTable.ide; singleton:=true
+Bundle-ActivationPolicy: lazy
+Require-Bundle: projetIDM.javaScriptForTable,
+ org.eclipse.xtext.ide,
+ org.eclipse.xtext.xbase.ide,
+ org.antlr.runtime;bundle-version="[3.2.0,3.2.1)"
+Bundle-RequiredExecutionEnvironment: JavaSE-17
+Export-Package: projetIDM.ide.contentassist.antlr.internal,
+ projetIDM.ide.contentassist.antlr

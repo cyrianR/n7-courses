@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<description:Group xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:tool="http://www.eclipse.org/sirius/diagram/description/tool/1.1.0" xmlns:tool_1="http://www.eclipse.org/sirius/description/tool/1.1.0" name="miniLanguage" version="12.0.0.2017041100">
+  <ownedViewpoints name="miniLanguageViewpoint" modelFileExtension="xmi">
+    <ownedRepresentations xsi:type="description_1:DiagramDescription" name="MiniLanguage" domainClass="miniLanguage::MiniLanguage" enablePopupBars="true">
+      <metamodel href="http://www.example.org/miniLanguage#/"/>
+      <defaultLayer name="Default">
+        <nodeMappings name="ParameterNode" domainClass="miniLanguage::Parameter">
+          <borderedNodeMappings name="OutputNode" semanticCandidatesExpression="feature:eAllContents" domainClass="miniLanguage::Output">
+            <style xsi:type="style:SquareDescription" labelSize="12" labelPosition="node" width="2" height="2">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+              <forbiddenSides>WEST</forbiddenSides>
+              <forbiddenSides>SOUTH</forbiddenSides>
+              <forbiddenSides>NORTH</forbiddenSides>
+              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            </style>
+          </borderedNodeMappings>
+          <style xsi:type="style:SquareDescription" labelSize="12" labelPosition="node" width="15" height="5">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_blue']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="ReturnNode" domainClass="miniLanguage::Return">
+          <borderedNodeMappings name="InputNode" semanticCandidatesExpression="feature:eAllContents" domainClass="miniLanguage::Input">
+            <style xsi:type="style:SquareDescription" labelSize="12" labelPosition="node" width="2" height="2">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+              <forbiddenSides>SOUTH</forbiddenSides>
+              <forbiddenSides>EAST</forbiddenSides>
+              <forbiddenSides>NORTH</forbiddenSides>
+              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            </style>
+          </borderedNodeMappings>
+          <style xsi:type="style:SquareDescription" labelSize="12" labelPosition="node" width="13" height="5">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_red']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="OperationUnaireNode" domainClass="miniLanguage::OperationUnaire">
+          <borderedNodeMappings name="InputNode" semanticCandidatesExpression="feature:eAllContents" domainClass="miniLanguage::Input">
+            <style xsi:type="style:SquareDescription" labelSize="12" labelPosition="node">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+              <forbiddenSides>SOUTH</forbiddenSides>
+              <forbiddenSides>EAST</forbiddenSides>
+              <forbiddenSides>NORTH</forbiddenSides>
+              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            </style>
+          </borderedNodeMappings>
+          <borderedNodeMappings name="OutputNode" semanticCandidatesExpression="feature:eAllContents" domainClass="miniLanguage::Output">
+            <style xsi:type="style:SquareDescription" labelSize="12" labelPosition="node">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+              <forbiddenSides>WEST</forbiddenSides>
+              <forbiddenSides>SOUTH</forbiddenSides>
+              <forbiddenSides>NORTH</forbiddenSides>
+              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            </style>
+          </borderedNodeMappings>
+          <style xsi:type="style:SquareDescription" labelSize="12" labelExpression="feature:operation" labelPosition="node" width="20" height="8">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_yellow']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="OperationBinaireNode" domainClass="miniLanguage::OperationBinaire">
+          <borderedNodeMappings name="InputNode" semanticCandidatesExpression="feature:eAllContents" domainClass="miniLanguage::Input">
+            <style xsi:type="style:SquareDescription" labelSize="12" labelPosition="node">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+              <forbiddenSides>SOUTH</forbiddenSides>
+              <forbiddenSides>EAST</forbiddenSides>
+              <forbiddenSides>NORTH</forbiddenSides>
+              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            </style>
+          </borderedNodeMappings>
+          <borderedNodeMappings name="OutputNode" semanticCandidatesExpression="feature:eAllContents" domainClass="miniLanguage::Output">
+            <style xsi:type="style:SquareDescription" labelSize="12" labelPosition="node">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+              <forbiddenSides>WEST</forbiddenSides>
+              <forbiddenSides>SOUTH</forbiddenSides>
+              <forbiddenSides>NORTH</forbiddenSides>
+              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            </style>
+          </borderedNodeMappings>
+          <style xsi:type="style:SquareDescription" labelSize="12" labelExpression="feature:operation" labelPosition="node" width="20" height="8">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_orange']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="IntegerConstant" semanticCandidatesExpression="aql:self.eContents(miniLanguage::IntegerConstant)" domainClass="miniLanguage::IntegerConstant">
+          <borderedNodeMappings name="OutputNode" semanticCandidatesExpression="feature:eAllContents" domainClass="miniLanguage::Output">
+            <style xsi:type="style:SquareDescription" labelSize="12" showIcon="false" labelPosition="node" width="2" height="2">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+              <labelFormat>strike_through</labelFormat>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+              <forbiddenSides>WEST</forbiddenSides>
+              <forbiddenSides>SOUTH</forbiddenSides>
+              <forbiddenSides>NORTH</forbiddenSides>
+              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            </style>
+          </borderedNodeMappings>
+          <style xsi:type="style:SquareDescription" labelSize="12" labelExpression="feature:value" labelPosition="node" width="5" height="5">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_green']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="FloatConstant" domainClass="miniLanguage::FloatConstant">
+          <borderedNodeMappings name="OutputNode" semanticCandidatesExpression="feature:eAllContents" domainClass="miniLanguage::Output">
+            <style xsi:type="style:SquareDescription" labelSize="12" labelPosition="node" width="2" height="2">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+              <forbiddenSides>WEST</forbiddenSides>
+              <forbiddenSides>SOUTH</forbiddenSides>
+              <forbiddenSides>NORTH</forbiddenSides>
+              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            </style>
+          </borderedNodeMappings>
+          <style xsi:type="style:SquareDescription" labelSize="12" labelExpression="feature:value" labelPosition="node" width="5" height="5">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_green']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="StringConstant" domainClass="miniLanguage::StringConstant">
+          <borderedNodeMappings name="OutputNode" semanticCandidatesExpression="feature:eAllContents" domainClass="miniLanguage::Output">
+            <style xsi:type="style:SquareDescription" labelSize="12" labelPosition="node" width="2" height="2">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <forbiddenSides>WEST</forbiddenSides>
+              <forbiddenSides>SOUTH</forbiddenSides>
+              <forbiddenSides>NORTH</forbiddenSides>
+              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            </style>
+          </borderedNodeMappings>
+          <style xsi:type="style:SquareDescription" labelSize="12" labelExpression="feature:value" labelPosition="node" width="10" height="5">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_green']"/>
+          </style>
+        </nodeMappings>
+        <edgeMappings name="OutputToInputEdge" sourceMapping="//@ownedViewpoints[name='miniLanguageViewpoint']/@ownedRepresentations[name='MiniLanguage']/@defaultLayer/@nodeMappings[name='OperationBinaireNode']/@borderedNodeMappings[name='OutputNode'] //@ownedViewpoints[name='miniLanguageViewpoint']/@ownedRepresentations[name='MiniLanguage']/@defaultLayer/@nodeMappings[name='OperationUnaireNode']/@borderedNodeMappings[name='OutputNode'] //@ownedViewpoints[name='miniLanguageViewpoint']/@ownedRepresentations[name='MiniLanguage']/@defaultLayer/@nodeMappings[name='ParameterNode']/@borderedNodeMappings[name='OutputNode'] //@ownedViewpoints[name='miniLanguageViewpoint']/@ownedRepresentations[name='MiniLanguage']/@defaultLayer/@nodeMappings[name='StringConstant']/@borderedNodeMappings[name='OutputNode'] //@ownedViewpoints[name='miniLanguageViewpoint']/@ownedRepresentations[name='MiniLanguage']/@defaultLayer/@nodeMappings[name='IntegerConstant']/@borderedNodeMappings[name='OutputNode'] //@ownedViewpoints[name='miniLanguageViewpoint']/@ownedRepresentations[name='MiniLanguage']/@defaultLayer/@nodeMappings[name='FloatConstant']/@borderedNodeMappings[name='OutputNode']" targetMapping="//@ownedViewpoints[name='miniLanguageViewpoint']/@ownedRepresentations[name='MiniLanguage']/@defaultLayer/@nodeMappings[name='OperationBinaireNode']/@borderedNodeMappings[name='InputNode'] //@ownedViewpoints[name='miniLanguageViewpoint']/@ownedRepresentations[name='MiniLanguage']/@defaultLayer/@nodeMappings[name='OperationUnaireNode']/@borderedNodeMappings[name='InputNode'] //@ownedViewpoints[name='miniLanguageViewpoint']/@ownedRepresentations[name='MiniLanguage']/@defaultLayer/@nodeMappings[name='ReturnNode']/@borderedNodeMappings[name='InputNode']" targetFinderExpression="aql:self.input">
+          <style targetArrow="NoDecoration" sizeComputationExpression="2" foldingStyle="SOURCE">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            <centerLabelStyleDescription labelSize="12">
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <toolSections name="Outils">
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="ReturnNodeCreation" label="Create Return" nodeMappings="//@ownedViewpoints[name='miniLanguageViewpoint']/@ownedRepresentations[name='MiniLanguage']/@defaultLayer/@nodeMappings[name='ReturnNode'] //@ownedViewpoints[name='miniLanguageViewpoint']/@ownedRepresentations[name='MiniLanguage']/@defaultLayer/@nodeMappings[name='ReturnNode']/@borderedNodeMappings[name='InputNode']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="[container/]">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="miniLanguage::Return" referenceName="miniLanguageElement">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="Return"/>
+                  <subModelOperations xsi:type="tool_1:ChangeContext" browseExpression="aql:self.input.return">
+                    <subModelOperations xsi:type="tool_1:CreateInstance" typeName="miniLanguage::Input" referenceName="input"/>
+                  </subModelOperations>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="OperationBinaireNodeCreation" label="Create Binary Operation" nodeMappings="//@ownedViewpoints[name='miniLanguageViewpoint']/@ownedRepresentations[name='MiniLanguage']/@defaultLayer/@nodeMappings[name='OperationBinaireNode']/@borderedNodeMappings[name='InputNode'] //@ownedViewpoints[name='miniLanguageViewpoint']/@ownedRepresentations[name='MiniLanguage']/@defaultLayer/@nodeMappings[name='OperationBinaireNode']/@borderedNodeMappings[name='OutputNode'] //@ownedViewpoints[name='miniLanguageViewpoint']/@ownedRepresentations[name='MiniLanguage']/@defaultLayer/@nodeMappings[name='OperationBinaireNode']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="[container/]">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="miniLanguage::OperationBinaire" referenceName="miniLanguageElement">
+                  <subModelOperations xsi:type="tool_1:ChangeContext" browseExpression="aql:self.input.operationBinaire">
+                    <subModelOperations xsi:type="tool_1:CreateInstance" typeName="miniLanguage::Input" referenceName="input"/>
+                  </subModelOperations>
+                  <subModelOperations xsi:type="tool_1:ChangeContext" browseExpression="aql:self.input.operationBinaire">
+                    <subModelOperations xsi:type="tool_1:CreateInstance" typeName="miniLanguage::Input" referenceName="input"/>
+                  </subModelOperations>
+                  <subModelOperations xsi:type="tool_1:ChangeContext" browseExpression="aql:self.output.operationBinaire">
+                    <subModelOperations xsi:type="tool_1:CreateInstance" typeName="miniLanguage::Output" referenceName="output"/>
+                  </subModelOperations>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="OperationUnaireNodeCreation" label="Create Unary Operation" nodeMappings="//@ownedViewpoints[name='miniLanguageViewpoint']/@ownedRepresentations[name='MiniLanguage']/@defaultLayer/@nodeMappings[name='OperationUnaireNode'] //@ownedViewpoints[name='miniLanguageViewpoint']/@ownedRepresentations[name='MiniLanguage']/@defaultLayer/@nodeMappings[name='OperationUnaireNode']/@borderedNodeMappings[name='InputNode'] //@ownedViewpoints[name='miniLanguageViewpoint']/@ownedRepresentations[name='MiniLanguage']/@defaultLayer/@nodeMappings[name='OperationUnaireNode']/@borderedNodeMappings[name='OutputNode']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="[container/]">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="miniLanguage::OperationUnaire" referenceName="miniLanguageElement">
+                  <subModelOperations xsi:type="tool_1:ChangeContext" browseExpression="aql:self.input.operationUnaire">
+                    <subModelOperations xsi:type="tool_1:CreateInstance" typeName="miniLanguage::Input" referenceName="input"/>
+                  </subModelOperations>
+                  <subModelOperations xsi:type="tool_1:ChangeContext" browseExpression="aql:self.input.operationUnaire">
+                    <subModelOperations xsi:type="tool_1:CreateInstance" typeName="miniLanguage::Input" referenceName="input"/>
+                  </subModelOperations>
+                  <subModelOperations xsi:type="tool_1:ChangeContext" browseExpression="aql:self.output.operationUnaire">
+                    <subModelOperations xsi:type="tool_1:CreateInstance" typeName="miniLanguage::Output" referenceName="output"/>
+                  </subModelOperations>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="ParameterNodeCreation" label="Create new Parameter" nodeMappings="//@ownedViewpoints[name='miniLanguageViewpoint']/@ownedRepresentations[name='MiniLanguage']/@defaultLayer/@nodeMappings[name='ParameterNode']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="[container/]">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="miniLanguage::Parameter" referenceName="miniLanguageElement">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="Parameter"/>
+                  <subModelOperations xsi:type="tool_1:ChangeContext" browseExpression="aql:self.output.parameter">
+                    <subModelOperations xsi:type="tool_1:CreateInstance" typeName="miniLanguage::Output" referenceName="output"/>
+                  </subModelOperations>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="IntegerNodeCreation" label="Create Integer constant" nodeMappings="//@ownedViewpoints[name='miniLanguageViewpoint']/@ownedRepresentations[name='MiniLanguage']/@defaultLayer/@nodeMappings[name='IntegerConstant'] //@ownedViewpoints[name='miniLanguageViewpoint']/@ownedRepresentations[name='MiniLanguage']/@defaultLayer/@nodeMappings[name='IntegerConstant']/@borderedNodeMappings[name='OutputNode']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="[container/]">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="miniLanguage::IntegerConstant" referenceName="miniLanguageElement">
+                  <subModelOperations xsi:type="tool_1:ChangeContext" browseExpression="aql:self.output">
+                    <subModelOperations xsi:type="tool_1:CreateInstance" typeName="miniLanguage::Output" referenceName="output"/>
+                  </subModelOperations>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="StringNodeCreation" label="Create String constant" nodeMappings="//@ownedViewpoints[name='miniLanguageViewpoint']/@ownedRepresentations[name='MiniLanguage']/@defaultLayer/@nodeMappings[name='StringConstant'] //@ownedViewpoints[name='miniLanguageViewpoint']/@ownedRepresentations[name='MiniLanguage']/@defaultLayer/@nodeMappings[name='StringConstant']/@borderedNodeMappings[name='OutputNode']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="[container/]">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="miniLanguage::StringConstant" referenceName="miniLanguageElement">
+                  <subModelOperations xsi:type="tool_1:ChangeContext" browseExpression="aql:self.output">
+                    <subModelOperations xsi:type="tool_1:CreateInstance" typeName="miniLanguage::Output" referenceName="output"/>
+                  </subModelOperations>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="FloatNodeCreation" label="Create Float constant" nodeMappings="//@ownedViewpoints[name='miniLanguageViewpoint']/@ownedRepresentations[name='MiniLanguage']/@defaultLayer/@nodeMappings[name='FloatConstant'] //@ownedViewpoints[name='miniLanguageViewpoint']/@ownedRepresentations[name='MiniLanguage']/@defaultLayer/@nodeMappings[name='FloatConstant']/@borderedNodeMappings[name='OutputNode']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="[container/]">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="miniLanguage::FloatConstant" referenceName="miniLanguageElement">
+                  <subModelOperations xsi:type="tool_1:ChangeContext" browseExpression="aql:self.output">
+                    <subModelOperations xsi:type="tool_1:CreateInstance" typeName="miniLanguage::Output" referenceName="output"/>
+                  </subModelOperations>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:EdgeCreationDescription" name="LinkCreation" label="Link Input to Output" edgeMappings="//@ownedViewpoints[name='miniLanguageViewpoint']/@ownedRepresentations[name='MiniLanguage']/@defaultLayer/@edgeMappings[name='OutputToInputEdge']">
+            <sourceVariable name="source"/>
+            <targetVariable name="target"/>
+            <sourceViewVariable name="sourceView"/>
+            <targetViewVariable name="targetView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="aql:source">
+                <subModelOperations xsi:type="tool_1:SetValue" featureName="output" valueExpression="[source/]">
+                  <subModelOperations xsi:type="tool_1:ChangeContext" browseExpression="aql:target.output">
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="input" valueExpression="[target/]"/>
+                  </subModelOperations>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+        </toolSections>
+      </defaultLayer>
+    </ownedRepresentations>
+    <ownedJavaExtensions qualifiedClassName="projetIDM.miniLanguage.design.Services"/>
+  </ownedViewpoints>
+</description:Group>

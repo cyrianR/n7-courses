@@ -1,0 +1,7 @@
+prog {
+  const a = 5;
+  rat x = [6/a];
+  rat* y = &x;
+  (*y) = [3/2];
+  print (*y);
+}

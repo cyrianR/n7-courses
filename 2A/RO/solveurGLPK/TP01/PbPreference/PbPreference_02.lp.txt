@@ -1,0 +1,36 @@
+\* Problem: PbPreference *\
+
+Maximize
+ PreferencesFinalesTotal: 0 X(P1,T1)
+
+Subject To
+ RespectMaxTache(P1): + X(P1,T1) + X(P1,T2) + X(P1,T3) = 1
+ RespectMaxTache(P2): + X(P2,T1) + X(P2,T2) + X(P2,T3) = 1
+ RespectMaxTache(P3): + X(P3,T1) + X(P3,T2) + X(P3,T3) = 1
+ RespectMaxPersonne(T1): + X(P1,T1) + X(P2,T1) + X(P3,T1) = 1
+ RespectMaxPersonne(T2): + X(P1,T2) + X(P2,T2) + X(P3,T2) = 1
+ RespectMaxPersonne(T3): + X(P1,T3) + X(P2,T3) + X(P3,T3) = 1
+
+Bounds
+ 0 <= X(P1,T1) <= 1
+ 0 <= X(P1,T2) <= 1
+ 0 <= X(P1,T3) <= 1
+ 0 <= X(P2,T1) <= 1
+ 0 <= X(P2,T2) <= 1
+ 0 <= X(P2,T3) <= 1
+ 0 <= X(P3,T1) <= 1
+ 0 <= X(P3,T2) <= 1
+ 0 <= X(P3,T3) <= 1
+
+Generals
+ X(P1,T1)
+ X(P1,T2)
+ X(P1,T3)
+ X(P2,T1)
+ X(P2,T2)
+ X(P2,T3)
+ X(P3,T1)
+ X(P3,T2)
+ X(P3,T3)
+
+End

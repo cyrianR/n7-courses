@@ -1,0 +1,5 @@
+test{
+  int z = 3;
+  int* y = &z;
+  int** x = &y;
+}

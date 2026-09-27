@@ -1,0 +1,9 @@
+static int variable = 0;
+
+int translater (int var){
+  var = (var + variable);
+}
+
+test {
+  print translater(1);
+}
