@@ -252,7 +252,6 @@ sphinxcontrib-qthelp==2.0.0
 sphinxcontrib-serializinghtml==2.0.0
 stack_data==0.6.4.dev0+g53501eb8b.d20251216
 sympy==1.14.0
-TBB @ file:///build/onetbb/src/build/python/python_build
 tinycss2==1.5.1
 tomlkit==0.15.1
 tornado==6.5.10
